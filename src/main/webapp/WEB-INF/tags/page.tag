@@ -417,7 +417,7 @@
         <div class="rmSlide" style="visibility: visible; height: 103px; width: 139px; display: none; overflow: hidden; left: 0px; top: 40px; z-index: 10;">
                   <ul class="rmVertical rmGroup rmLevel1" style="display: block; top: -103px; left: 0px; visibility: visible;">
                     <li class="rmItem rmFirst">
-                      <a href="/Default.aspx?ArticleId=f9111384-c9ad-46ac-ba10-037bf3d691a4" class="rmLink" style="width: 139px;">
+                      <a href="/Icsse.jsp" class="rmLink" style="width: 139px;">
                         <span class="rmText">icsse</span>
                       </a>
                     </li>
@@ -440,7 +440,7 @@
           </a>
         </li>
         <li class="rmItem ">
-          <a href="/Default.aspx?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef" class="rmLink rmRootLink">
+          <a href="/Submission.jsp" class="rmLink rmRootLink">
             <span class="rmText">Submission</span>
           </a>
         </li>
@@ -460,7 +460,7 @@
           </a>
         </li>
         <li class="rmItem ">
-          <a href="/Default.aspx?ArticleId=242b6486-aeb4-472f-b74f-779069bbd957" class="rmLink rmRootLink">
+          <a href="/Venue.jsp" class="rmLink rmRootLink">
             <span class="rmText">Venue &amp; Hotel</span>
           </a>
         </li>
@@ -510,7 +510,7 @@
 												<ul>
 												
 			
-														<li><a href="/?ArticleId=3af2fa01-2645-4516-a65a-67bfec768e13">
+														<li><a href="/Special.jsp">
 															<p>Create Date 09/03/2017</p>
 															SPECIAL SESSION 02 FOR ICSSE2017: FUZZY SYSTEMS AND ITS APPLICATIONS</a></a> </li>
 													
