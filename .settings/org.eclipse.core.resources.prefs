@@ -3,6 +3,7 @@ encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
 encoding//src/main/resources/templates/thymeleaf/uploadForm.html=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/ckeditor.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/tags/template.tag=UTF-8
 encoding//src/test/java=UTF-8
 encoding//src/test/resources=UTF-8
 encoding/<project>=UTF-8
