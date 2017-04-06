@@ -1,17 +1,21 @@
 <%@tag description="ffhgd" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <%@ attribute name="page" required="true"%>
-<t:template>
 
 <!-- *******************HEADER************************ -->
-
+<t:template>
 	<jsp:attribute name="header">
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from icsse2017.hcmute.edu.vn/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Mar 2017 02:33:22 GMT -->
+<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
 <body>
 	<head>
-<title>ICSSE 2017</title>
+<title>WELCOME TO ICSSE 2017</title>
 <link href="/resources/CSS/show_img.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript"
 	src="/resources/Portlets/PanelBar/js/jquery-1.7.2.min.js"></script>
@@ -50,7 +54,7 @@
 		str = str.replace(/^\s+|\s+$/g, ''); // trim
 		str = str.toLowerCase();
 		// remove accents, swap Ã± for n, etc
-		var from = "Ã Ã¡áº£Ã£áº¡Äáº±áº¯áº³áºµáº·Ã¢áº§áº¥áº©áº«áº­ÄÃ¨Ã©áº»áº½áº¹Ãªá»áº¿á»á»á»Ã¬Ã­á»Ä©á»Ã²Ã³á»Ãµá»Ã´á»á»á»á»á»Æ¡á»á»á»á»¡á»£Ã¹Ãºá»§Å©á»¥Æ°á»«á»©á»­á»¯á»±á»³Ã½á»·á»¹á»µÂ·/_,:;";
+		var from = "Ã Ã¡áº£Ã£áº¡Äáº±áº¯áº³áºµáº·Ã¢áº§áº¥áº©áº«áº­ÄÃ¨Ã©áº»áº½áº¹Ãªá»áº¿á»á»á»Ã¬Ã­á»Ä©á»Ã²Ã³á»Ãµá»Ã´á»á»á»á»á»Æ¡á»á»á»á»¡á»£Ã¹Ãºá»§Å©á»¥Æ°á»«á»©á»­á»¯á»±á»³Ã½á»·á»¹á»µÂ·/_,:;";
 		var to = "aaaaaaaaaaaaaaaaadeeeeeeeeeeeiiiiiooooooooooooooooouuuuuuuuuuuyyyyy------";
 		for (var i = 0, l = from.length; i < l; i++) {
 			str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
@@ -317,8 +321,6 @@
 
 										</div>
 									</div>
-									
-									<!-- Banner -->
 									<div id='ctl06_portlet_e28a24d5-befe-4213-a3d5-2e1ebcb2a71e'
 										style="width: 1000px; float: left">
 										<div>
@@ -334,7 +336,7 @@
 
 
 
-											<!-- Banner container -->
+
 											<div class="container" style="height: 350px;">
 												<div class="slider-wrapper theme-default">
 													<div id="slider" class="nivoSlider">
@@ -350,7 +352,6 @@
 													</div>
 												</div>
 											</div>
-											<!-- end Banner container -->
 											<script>
 												$(document)
 														.ready(
@@ -399,8 +400,6 @@
 											</script>
 										</div>
 									</div>
-									<!-- end Banner -->
-									<!-- Menu -->
 									<div id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92" style="padding:10px 0px 0px 0px;width:1000px;float:left"><div>
       <link href="/resources/Portlets/MenuRad/Menu.Green.css" rel="stylesheet" type="text/css">
         <div id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu" class="RadMenu RadMenu_Green rmSized" style="height: 40px; z-index: 1; width: 100%;">
@@ -417,12 +416,12 @@
         <div class="rmSlide" style="visibility: visible; height: 103px; width: 139px; display: none; overflow: hidden; left: 0px; top: 40px; z-index: 10;">
                   <ul class="rmVertical rmGroup rmLevel1" style="display: block; top: -103px; left: 0px; visibility: visible;">
                     <li class="rmItem rmFirst">
-                      <a href="/Icsse.jsp" class="rmLink" style="width: 139px;">
+                      <a href="/Default.aspx?ArticleId=f9111384-c9ad-46ac-ba10-037bf3d691a4" class="rmLink" style="width: 139px;">
                         <span class="rmText">icsse</span>
                       </a>
                     </li>
                     <li class="rmItem ">
-                      <a href="/hcmute.jsp" class="rmLink" style="width: 139px;">
+                      <a href="/Default.aspx?ArticleId=c8018710-9562-44c6-bef0-2a0f22e73f6b" class="rmLink" style="width: 139px;">
                         <span class="rmText">HCMUTE</span>
                       </a>
                     </li>
@@ -440,7 +439,7 @@
           </a>
         </li>
         <li class="rmItem ">
-          <a href="/Submission.jsp" class="rmLink rmRootLink">
+          <a href="/Default.aspx?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef" class="rmLink rmRootLink">
             <span class="rmText">Submission</span>
           </a>
         </li>
@@ -460,7 +459,7 @@
           </a>
         </li>
         <li class="rmItem ">
-          <a href="/Venue.jsp" class="rmLink rmRootLink">
+          <a href="/Default.aspx?ArticleId=242b6486-aeb4-472f-b74f-779069bbd957" class="rmLink rmRootLink">
             <span class="rmText">Venue &amp; Hotel</span>
           </a>
         </li>
@@ -474,7 +473,6 @@
           </div>
           </div>
         </div>
-        <!-- end menu -->
 								</div>
 							</div></div>
 					</div>
@@ -485,146 +483,6 @@
 		</div>
 	</form>
 	</jsp:attribute>
-	
-	<!-- *******************Header end************************ -->
-	
-		<!-- *******************SIDEBAR************************ -->
-	<jsp:atteribute  name="sidebar">
-
-				<div id="sidebar">
-								
-								<td><div id="pnRight">
-													<div id="pnRightDisplay" style="padding:0px 0px 0px 6px;width:300px;float:right">
-														<div id='ctl06_portlet_b633be64-8363-4e53-9952-6acf34d3e9e9' style="float:left;"><div>
-															
-										<style type="text/css">
-			
-										</style>
-										<div class="thongbao_phong">
-											<div class="topictb_phong_blue">
-												<h3>Latest news</h3>
-												<a class="wobble-horizontal" href="/?TopicId=31ca0f13-71be-4bd9-ad28-d3589a3cf6d2">
-													<img src="/resources/Resources/ImagesPortal/PhongBan/arrow_all_phong.png"></a>
-											</div>
-											<div class="listtb_phong">
-												<ul>
-												
-			
-														<li><a href="/Special.jsp">
-															<p>Create Date 09/03/2017</p>
-															SPECIAL SESSION 02 FOR ICSSE2017: FUZZY SYSTEMS AND ITS APPLICATIONS</a></a> </li>
-													
-			
-														<li><a href="/?ArticleId=bc474489-26ce-4997-a1c0-b37dce27b202">
-															<p>Create Date 07/03/2017</p>
-															ABSTRACT DEADLINE EXTENSION: MARCH 19, 2017</a></a> </li>
-													
-			
-														<li><a href="/?ArticleId=f796f938-0681-4d25-b47e-6bcd24536152">
-															<p>Create Date 20/02/2017</p>
-															SPECIAL SESSION 01 FOR ICSSE2017: INTELLIGENT HEALTHCARE SYSTEMS</a></a> </li>
-													
-											</ul>
-										</div>
-											<!--end listtb_phong-->
-										</div>
-			
-														</div></div><div id='ctl06_portlet_9d945843-6c22-4daf-9b88-835da3891673' style="float:left"><div>
-															<table>
-											<tbody>
-												<tr>
-													<td style="text-align: left; width: 350px; height: 40px; vertical-align: middle; background-color: #ff0000;">&nbsp;<span style="font-size: 20px; color: #ffff00;"><strong>IMPORTANT DEADLINES</strong></span></td>
-												</tr>
-											</tbody>
-										</table>
-										<p style="text-align: justify;"><span style="font-size: 12px; color: #002060;"><strong><br />
-										</strong></span></p>
-										<div style="text-align: center;"><strong><strong style="text-align: left;"><span style="font-size: 16px;"><span style="text-decoration: line-through;">March 7, 2017</span><br />
-										<strong><span style="color: #c00000;">Extended untill March 19, 2017</span></strong><br />
-										</span></strong></strong></div>
-										<span style="font-size: 16px; color: #002060;"><strong>
-										</strong>
-										</span>
-										<div style="text-align: center;"><span style="font-size: 16px; color: #002060;"><span style="text-align: left; font-size: 16px;">2-Pages &nbsp;Extended Abstract&nbsp;</span><span style="font-size: 16px;">Submission</span></span></div>
-										<div style="text-align: center;"><span style="font-size: 16px; color: #002060;"><br />
-										</span></div>
-										<span style="font-size: 16px; color: #002060;">
-										<div style="text-align: center;"><strong style="text-align: left;">March 30, 2017</strong></div>
-										<div style="text-align: center;"><span style="text-align: left; font-size: 16px;">Notification of Acceptance</span></div>
-										</span>
-										<div style="text-align: center;"><span style="font-size: 16px; color: #002060;"><br />
-										</span></div>
-										<span style="font-size: 16px; color: #002060;">
-										<div style="text-align: center;"><strong style="text-align: left;">May 10, 2017</strong></div>
-										<div style="text-align: center;"><span style="text-align: left; font-size: 16px;">2-6 Pages Final Papers Submission</span></div>
-										</span><span style="font-size: 16px;"><span style="font-size: 16px; color: #002060;">
-										</span>
-										<div style="text-align: center;"><span style="font-size: 16px; color: #002060;"><br />
-										</span></div>
-										<span style="font-size: 14px;"><span style="font-size: 16px; color: #002060;">
-										</span>
-										<div style="text-align: center;"><span style="font-size: 16px; color: #002060;"><strong style="font-size: medium; text-align: left;">May 30, 2017</strong><span style="text-align: left; font-size: 16px;">:&nbsp;</span></span></div>
-										<span style="font-size: 16px; color: #002060;"><span style="font-size: 16px;">
-										</span>
-										<div style="text-align: center;"><span style="text-align: left; font-size: 16px;">Online Registration</span></div>
-										</span>
-										</span>
-										<br />
-										</span>
-			
-														</div></div><div id='ctl06_portlet_553574d9-9245-4da8-a214-baf51898689a' style="float:left;"><div>
-															<table>
-											<tbody>
-												<tr>
-													<td style="width: 350px; height: 40px; background-color: #92d050;"><strong><span><span style="font-size: 20px; color: #c00000;">SPECIAL SESSION</span><br />
-													</span></strong></td>
-												</tr>
-											</tbody>
-										</table>
-										<span style="font-size: 10.5pt; letter-spacing: 0.85pt; font-family: &quot;times new roman&quot;, serif;"><strong style="font-weight: bold; color: #002060; font-family: &quot;times new roman&quot;, serif; font-size: 14px; letter-spacing: 1.13333px;"><strong><br />
-										<a href="https://easychair.org/conferences/?conf=icsse2017specialsess" target="_blank">SPECIAL SESSION SUBMISSION LINK</a>&nbsp;</strong></strong><br />
-										<span style="font-size: 14px;"><br />
-										<div style="text-align: center;"><strong style="letter-spacing: 0.85pt; background-color: #ffff00;"><span style="color: #002060;"><strong style="letter-spacing: 1.13333px;"><strong>SPECIAL SESSION&nbsp;</strong></strong>01</span></strong></div>
-										<strong>
-										<div style="text-align: center;"><strong style="letter-spacing: 0.85pt;"><span style="background-color: #ffff00; color: #002060;">INTELLIGENT HEALTHCARE SYSTEMS</span></strong></div>
-										</strong></span>
-										<div style="font-weight: bold; color: #002060; text-align: center;"><span style="font-size: 10.5pt; letter-spacing: 0.85pt;"><a href="/resources/Resources/Docs/SubDomain/icsse2017/SS_cfp_Huang.pdf">CALL FOR PAPERS</a></span></div>
-										<br />
-										<div style="text-align: center;"><strong style="font-size: 10.5pt; letter-spacing: 0.85pt; margin: 0px; padding: 0px;"><span style="margin: 0px; padding: 0px; font-size: 20px;"><strong style="margin: 0px; padding: 0px;"><span style="margin: 0px; padding: 0px; font-size: 14px; background-color: #ffff00; color: #002060;"><strong style="font-family: &quot;times new roman&quot;, serif; font-size: 14px; letter-spacing: 0.85pt; text-align: -webkit-center; background-color: #ffff00;"><span style="color: #002060;"><strong style="letter-spacing: 1.13333px;"><strong>SPECIAL SESSION&nbsp;</strong></strong></span></strong>02<br />
-										FUZZY SYSTEMS &amp; ITS APPLICATIONS</span></strong></span></strong></div>
-										<strong style="margin: 0px; padding: 0px; font-size: 14px;">
-										<div style="text-align: center;"><strong style="letter-spacing: 0.85pt; margin: 0px; padding: 0px;"><a href="/resources/Resources/Docs/SubDomain/icsse2017/SS02 - call4pp.pdf" style="margin: 0px; padding: 0px; text-decoration: none;">CALL FOR PAPER</a></strong></div>
-										</strong>
-										<br />
-										</span>
-			
-														</div></div><div id='ctl06_portlet_78439b67-a318-4ced-ac29-33d02da2a0fb' style="float:left;"><div>
-															<table>
-											<tbody>
-												<tr>
-													<td style="text-align: left; width: 350px; vertical-align: middle; height: 40px; background-color: #002060;">&nbsp;<span style="font-size: 20px; color: #ffff00;"><strong>KEY LINKS</strong></span></td>
-												</tr>
-											</tbody>
-										</table>
-										<br />
-										<span style="color: #002060;"><span style="font-size: 14px;"><a href="https://easychair.org/conferences/?conf=icsse2017" target="_blank"><strong>EASYCHAIR SUBMISSION SITE</strong></a></span><br />
-										<span style="font-size: 14px;"><a href="/resources/Resources/Docs/SubDomain/icsse2017/ieeeconf_letter.doc"><br />
-										<strong>
-										PAPER FORMAT TEMPLATE DOWNLOAD</strong></a>&nbsp;<br />
-										</span></span><span style="font-size: 14px;"><br />
-										<strong><strong style="font-size: 14px;"></strong><strong style="font-size: 14px;"></strong><a href="/resources/Resources/Docs/SubDomain/icsse2017/Instruction easychair_ICSSE2017.docx"><strong style="font-size: 14px;">EASYCHAIR&nbsp;</strong>SUBMISSION INSTRUCTION</a></strong></span>
-			
-														</div></div>
-													</div>
-								</div>
-								</td>
-							</tr>
-				</div>
-	
-	</jsp:atteribute>
-	<!-- *******************SIDEBAR end************************ -->
-	
-	<!-- *******************Footer************************ -->
 	<jsp:attribute name="footer">
 	
 	<div class="container" style="height: 350px;">
@@ -671,6 +529,79 @@
 	</div>
 	</div>
 	</jsp:attribute>
-	<!-- *******************Footer end************************ -->
+	<jsp:body>		
+		<jsp:doBody/>
+	</jsp:body>
+</t:template>
+
+		<script type="text/javascript">
+			//<![CDATA[
+			Sys.Application.add_init(function() {
+				$create(Telerik.Web.UI.RadWindowManager, {
+					"clientStateFieldID" : "RadWindowManager1_ClientState",
+					"formID" : "form1",
+					"iconUrl" : "",
+					"minimizeIconUrl" : "",
+					"name" : "RadWindowManager1",
+					"skin" : "Default",
+					"windowControls" : "[]"
+				}, null, null, $get("RadWindowManager1"));
+			});
+			Sys.Application
+					.add_init(function() {
+						$create(
+								Telerik.Web.UI.RadMenu,
+								{
+									"_childListElementCssClass" : null,
+									"_skin" : "Green",
+									"attributes" : {},
+									"clientStateFieldID" : "ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState",
+									"collapseAnimation" : "{\"duration\":450}",
+									"expandAnimation" : "{\"duration\":450}",
+									"itemData" : [
+											{
+												"navigateUrl" : "~/Default.aspx?PageId=8cb7e0c5-10f3-438b-8881-a74c24b373e3"
+											},
+											{
+												"items" : [
+														{
+															"navigateUrl" : "~/Default.aspx?ArticleId=f9111384-c9ad-46ac-ba10-037bf3d691a4"
+														},
+														{
+															"navigateUrl" : "~/Default.aspx?ArticleId=c8018710-9562-44c6-bef0-2a0f22e73f6b"
+														},
+														{
+															"navigateUrl" : "~/Default.aspx?ArticleId=dd21088d-cb55-4f9d-ac9c-73553c715cae"
+														} ],
+												"navigateUrl" : "#"
+											},
+											{
+												"navigateUrl" : "~/Default.aspx?ArticleId=fc8c1223-a9d2-46b5-9db3-665c778f0ac9"
+											},
+											{
+												"navigateUrl" : "~/Default.aspx?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef"
+											},
+											{
+												"navigateUrl" : "~/Default.aspx?ArticleId=707e0e24-5220-4821-a40f-4041eb76cc1a"
+											},
+											{
+												"navigateUrl" : "~/Default.aspx?ArticleId=be204435-0615-4fc3-aa86-392d871decc8"
+											},
+											{
+												"navigateUrl" : "#"
+											},
+											{
+												"navigateUrl" : "~/Default.aspx?ArticleId=242b6486-aeb4-472f-b74f-779069bbd957"
+											},
+											{
+												"navigateUrl" : "~/Default.aspx?ArticleId=b4031ebe-e802-4402-a49a-5769943872a5"
+											} ]
+								},
+								null,
+								null,
+								$get("ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu"));
+					});
+			//]]>
+		</script>
 </body>
 </html>

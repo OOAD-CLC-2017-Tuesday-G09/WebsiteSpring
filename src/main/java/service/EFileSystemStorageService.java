@@ -1,4 +1,4 @@
-package hello.storage;
+package service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -11,6 +11,11 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.google.api.services.drive.model.File;
 
+import hello.StorageException;
+import hello.StorageFileNotFoundException;
+import hello.StorageProperties;
+import hello.StorageService;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
@@ -19,6 +24,8 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Stream;
 
+//@Service
+@Qualifier("fileSys")
 public class EFileSystemStorageService implements StorageService {
 
     private final Path rootLocation;

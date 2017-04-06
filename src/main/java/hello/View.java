@@ -12,7 +12,7 @@
  * the License.
  */
 
-package hello.storage;
+package hello;
 
 /**
  * Utility methods to print to the command line.
@@ -21,13 +21,13 @@ package hello.storage;
  */
 public final class View {
 
-  static void header1(String name) {
+  public static void header1(String name) {
     System.out.println();
     System.out.println("================== " + name + " ==================");
     System.out.println();
   }
 
-  static void header2(String name) {
+  public static void header2(String name) {
     System.out.println();
     System.out.println("~~~~~~~~~~~~~~~~~~ " + name + " ~~~~~~~~~~~~~~~~~~");
     System.out.println();

@@ -285,5 +285,5 @@ Address: 135 Nam Ky Khoi Nghia, Ben Thanh, District 1, Ho Chi Minh City</span><b
         </div>
     </div>
 </div>
-	</jsp:body
+	</jsp:body>
 	</t:page>

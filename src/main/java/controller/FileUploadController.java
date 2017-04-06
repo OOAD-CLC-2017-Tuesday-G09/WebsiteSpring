@@ -1,8 +1,7 @@
-package hello;
+package controller;
 
-import hello.storage.StorageFileNotFoundException;
-import hello.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
 import org.springframework.core.io.Resource;
@@ -15,6 +14,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import hello.StorageFileNotFoundException;
+import hello.StorageService;
 
 import java.io.IOException;
 import java.util.stream.Collectors;
@@ -33,16 +35,16 @@ public class FileUploadController {
     @GetMapping("/")
     public String listUploadedFiles(Model model) throws IOException {
 
-        model.addAttribute("files", storageService
-                .loadAll()
-                .map(path ->
-                        MvcUriComponentsBuilder
-                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
-                                .build().toString())
-                .collect(Collectors.toList()));
+//        model.addAttribute("files", storageService
+//                .loadAll()
+//                .map(path ->
+//                        MvcUriComponentsBuilder
+//                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+//                                .build().toString())
+//                .collect(Collectors.toList()));
 
-        return "jsp/test";
-        //return "thymeleaf/uploadForm";
+        //return "jsp/test";
+        return "jsp/index";
     }
 
     @GetMapping("/files/{filename:.+}")

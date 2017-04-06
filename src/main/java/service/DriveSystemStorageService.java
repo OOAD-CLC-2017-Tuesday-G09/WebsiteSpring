@@ -1,4 +1,4 @@
-package hello.storage;
+package service;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -17,13 +17,20 @@ import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.Part;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import hello.StorageException;
+import hello.StorageFileNotFoundException;
+import hello.StorageProperties;
+import hello.StorageService;
+
 @Service("DriveStorage")
+@Qualifier("driveSys")
 @MultipartConfig(fileSizeThreshold=1024*1024*10, 	// 10 MB 
 maxFileSize=1024*1024*50,      	// 50 MB
 maxRequestSize=1024*1024*100)   	// 100 MB

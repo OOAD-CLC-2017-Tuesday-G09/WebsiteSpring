@@ -12,7 +12,7 @@
  * the License.
  */
 
-package hello.storage;
+package hello;
 
 
 import com.google.api.client.googleapis.media.MediaHttpDownloader;

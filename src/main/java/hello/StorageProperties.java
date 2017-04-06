@@ -1,4 +1,4 @@
-package hello.storage;
+package hello;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

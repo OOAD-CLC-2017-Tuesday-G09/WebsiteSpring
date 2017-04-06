@@ -12,7 +12,7 @@
  * the License.
  */
 
-package hello.storage;
+package service;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -33,6 +33,10 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 
 import com.google.api.services.drive.DriveScopes;
 import com.google.api.services.drive.model.*;
+
+import hello.FileUploadProgressListener;
+import hello.View;
+
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.Drive.Files;
 import com.google.api.services.drive.Drive.Files.Create;
