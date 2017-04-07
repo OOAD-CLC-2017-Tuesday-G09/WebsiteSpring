@@ -347,7 +347,7 @@
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=242b6486-aeb4-472f-b74f-779069bbd957" class="rmLink rmRootLink">
+												<a href="venue" class="rmLink rmRootLink">
 													<span class="rmText">Venue & Hotel</span>
 												</a>
 											</li>
