@@ -46,6 +46,21 @@ public class FileUploadController {
         //return "jsp/test";
         return "jsp/index";
     }
+    
+    
+    
+  //home
+    @GetMapping("/home")
+    public String showEditor(Model model) throws IOException {
+        return "jsp/Default71a5";
+    }
+    
+   /*//Venue_Hotel
+    @GetMapping("/venue")
+    public String showEditor(Model model) throws IOException {
+        return "jsp/Default26a6";
+    }*/
+    
 
     @GetMapping("/files/{filename:.+}")
     @ResponseBody

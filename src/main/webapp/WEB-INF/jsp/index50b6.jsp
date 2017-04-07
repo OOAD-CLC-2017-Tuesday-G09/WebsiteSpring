@@ -7,60 +7,42 @@
 	<div class="bg_display">
     <div class="display" style="float: left; width: 100%;">
         <div class="title_display">
-             <a style='color:#666;' href=indexc059.html?TopicId=31ca0f13-71be-4bd9-ad28-d3589a3cf6d2>Latest news </a> 
+             <a style='color:#666;' href=indexb681.html?TopicId=07cabf23-9b06-4682-a475-e20690f532ba>icsse </a> 
         </div>
         <div style="margin-top: 10px;">
             <div style="margin-left: 5px; margin-bottom: 10px;">
                 <div class="ct_tin_display">
                     <div class="articleTitle">
-                        <a href="index52be.html?ArticleId=3af2fa01-2645-4516-a65a-67bfec768e13">SPECIAL SESSION 02 FOR ICSSE2017: FUZZY SYSTEMS AND ITS APPLICATIONS</a>
+                        <a href="index50b6.html?ArticleId=f9111384-c9ad-46ac-ba10-037bf3d691a4"></a>
                     </div>
                     <div style="float:left;width: 100%; margin: 5px 5px 5px 10px;display: none;" >
                         <span style="font-weight: bold;font-style: italic">Tác giả </span>:
                     </div>
                    
                     <div class="articleContent">
-                        <span style="font-size: 16px;"><br />
-<span style="font-size: 16px;"><strong><span style="font-size: 16px; color: #c00000;">Introduction/Call for Papers</span></strong><br />
-<span style="font-size: 16px; color: #002060;">This session aims at discussing the problems of fuzzy control system and its applications in practice. Nowadays, fuzzy control systems cover a wide range of fields in modern life such as controlling system, robotics, decision making and image processing &hellip;etc. Additionally, the trend of applying and studying fuzzy systems keep increasing in the future. Prospective authors from a variety of fields including fuzzy controller design, robotics, image processing &hellip;etc., are invited to submit original papers to the Special Session.</span><br />
+                        <span style="font-size: 14px; font-family: &quot;times new roman&quot;;"><span style="margin: 0px; padding: 0px; font-size: 14px; line-height: normal;"><br />
 <br />
-<strong><span style="font-size: 16px; color: #c00000;">&nbsp;Topics of interests include but not limited to:</span></strong><br />
-<span style="font-size: 16px; color: #002060;">&nbsp;- Fuzzy systems or fuzzy theories</span><br />
-<span style="font-size: 16px; color: #002060;">&nbsp;- Any application by fuzzy logic or fuzzy reasoning</span><br />
+<span style="font-size: 14px; color: #002060;">Systems Science and Engineering has emerged as a research field that covers a wide spectrum of modern technology. A system can be considered as a collection of entities and their interrelationships gathered together to form a whole greater than the sum of the entities. It also involves people, organizations, cultures, activities and interrelationships among them. While systems composed of autonomous subsystems are not new, increased data density, connectivity and ubiquitous computational resources have increased their interdependence and interaction complexity. This has in turn made the already difficult job of planning, developing and deploying complex systems even more difficult.&nbsp;<br />
+</span></span><span style="font-size: 14px;"><br style="margin: 0px; padding: 0px; font-size: medium; line-height: normal;" />
+<span style="margin: 0px; padding: 0px; font-size: 14px; line-height: normal; color: #002060;">Technology advancement not only provides opportunities for improving system capabilities but also introduces development risks that must be weighed and managed. Thus, it is our goal to bring together scholars from all areas to have a forum to discuss, demonstrate and exchange research ideas in the scope of system science and engineering.</span><br style="margin: 0px; padding: 0px; font-size: medium; line-height: normal;" />
+<br style="margin: 0px; padding: 0px; font-size: medium; line-height: normal;" />
+</span><span style="margin: 0px; padding: 0px; line-height: normal; font-size: 14px; color: #002060;"><span style="font-size: 14px;">The International Conference of Systems Science and Engineering 2017 (ICSSE 2017) is an international conference that will take place in Ho Chi Minh City during July 21-23, 2017. This event will provide a great opportunity for scientists, engineers, and practitioners from all over the world to present the latest system design concepts, research results, developments and applications, as well as to facilitate interactions between scholars and practitioners. ICSSE 2017 will feature plenary speeches in emerging technology topics given by world renowned scholars. The proceedings of ICSSE 2017 will be published by the IEEE with EI indexing. In addition, selected high-quality papers will be published by special issues of SCI-indexed journals.</span><br />
+</span></span><span style="font-size: medium; line-height: normal;"><span style="font-size: 14px; font-family: &quot;times new roman&quot;;"><br />
+<a href="http://www.twtasse.org/icsse2016/" target="_blank" style="background-color: #dbe5f1; color: #002060;"><br />
+<strong><span style="font-size: 16px;">ICSSE 2016 click here</span></strong></a><span style="font-size: 16px;"><br />
 <br />
-All accepted papers that will be part of the conference proceedings, are expected to be included in IEEE Xplore and will be indexed by EI.<br />
+<strong><span style="background-color: #ffff00; font-size: 16px; color: #002060;"><strong style="font-family: &quot;times new roman&quot;; font-size: medium;"><span style="background-color: #ffff00; font-size: 16px; color: #002060;">&nbsp;<strong><span style="font-size: 16px; color: #002060;">ICSSE&nbsp;</span></strong></span></strong>PUBLISHED PROCEEDINGS</span></strong></span><br />
+<br />
 </span>
-</span>
-<div><span style="font-size: 16px;"><br />
-</span></div>
-<p><span style="text-align: left; font-size: 16px;"><strong><span style="font-size: 16px; color: #c00000;">Submission</span><br />
-</strong>
-</span></p>
-<div style="text-indent: 0px;"><span style="font-size: 16px;"><span style="text-indent: 36pt; font-size: 16px; color: #002060;">Submitted manuscripts should be within 2~6 pages in IEEE two-column format, including figures, tables, and references. Please use the templates at </span><span style="text-decoration: underline; line-height: 107%; font-size: 16px; color: #00b0f0;">Manuscript Templates for IEEE Conference Proceedings</span><span style="text-indent: 36pt; font-size: 16px; color: #002060;"> from the conference website to prepare your paper. All submissions MUST be in PDF format.</span></span></div>
-<p style="line-height: 15.75pt; text-align: center;"><span style="font-size: 16px;"><span style="font-size: 16px;"><br />
-Complete manuscripts must be electronically submitted through Easychair system at: </span><strong><span style="background: #ffc000; text-decoration: none; font-size: 16px;"><a href="https://easychair.org/conferences/?conf=icsse2017specialsess" target="_blank" style="color: #002060;"><span style="font-size: 18px;">https://easychair.org/conferences/?conf=icsse2017specialsess</span></a><br />
-</span></strong></span></p>
-<div style="text-indent: 0px; text-align: justify;"><span style="font-size: 14px;"><span style="font-size: 16px;"><strong style="font-weight: bold; color: #002060; background-color: #f3f3f3; font-size: 14px; text-indent: 21.3pt; text-align: left;"><span style="font-size: 16px; color: #c00000;"><br />
-NOTE</span></strong><span style="font-weight: bold; background-color: #f3f3f3; text-indent: 21.3pt; text-align: left; font-size: 16px; color: #c00000;">: If you want to submit a paper for <strong>SPECIAL SESSION 02</strong> (FUZZY SYSTEMS AND ITS APPLICATIONS<strong>)</strong>, please add SS02- before title of your paper when you type the title on easy chair.<br />
-</span><span style="font-weight: bold; text-indent: 21.3pt; background-color: #f3f3f3; text-align: left; font-size: 16px; color: #002060;">Example: </span></span><span style="font-size: 14px; text-indent: 21.3pt; background-color: #f3f3f3; text-align: left;"><span style="font-size: 16px;"><span style="font-style: italic; font-weight: bold; font-size: 16px; color: #002060;">SS02- Fuzzy Restricted Boltzmann Machine for the Enhancement of Deep Learnin</span><span style="font-style: italic; font-weight: bold; font-size: 16px;"><span style="color: #002060;">g</span><br />
-</span><br />
-</span>
-<div style="text-align: center;"><span style="font-size: 16px;"><img alt="" src="/resources/Resources/Images/SubDomain/icsse2017/SS02.png" style="text-indent: 21.3pt;" /></span></div>
-<span style="font-size: 16px;"><br />
-<span style="font-weight: bold; font-size: 16px; color: #c00000;">Important Dates</span><br />
-<span style="font-size: 16px; color: #002060;">March 15, 2017: Deadline for submission of 2-page extended abstract papers to special sessions.<br />
-March 30, 2017: Acceptance/Rejection Notification.<br />
-May 10, 2017: Final camera-ready papers due in electronic form.</span><br />
+<div style="font-size: 12.8px; background-color: #ffffff; text-align: start;"><span style="font-size: 14px; font-family: &quot;times new roman&quot;;"><span style="font-size: 14px; color: #002060;">ICSSE 2010:</span><span style="font-size: 14px; color: #222222;">&nbsp;<a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=5540658" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber%3D5540658&amp;source=gmail&amp;ust=1478060129583000&amp;usg=AFQjCNExAwZ5-MNzHbiq0Uh3CKEJ2Wdtjw" style="color: #1155cc;">http://ieeexplore.ieee.<wbr></wbr>org/xpl/mostRecentIssue.jsp?<wbr></wbr>punumber=5540658</a></span></span></div>
+<div style="font-size: 12.8px; background-color: #ffffff; text-align: start;"><span style="font-size: 14px; font-family: &quot;times new roman&quot;; color: #002060;"><span style="font-size: 14px; text-align: start; background-color: #ffffff;">ICSSE</span> 2012:&nbsp;<a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6246741" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber%3D6246741&amp;source=gmail&amp;ust=1478060129583000&amp;usg=AFQjCNGvjchuz2iM-tvc0Xydw5kDFdCAFA">http://ieeexplore.ieee.<wbr></wbr>org/xpl/mostRecentIssue.jsp?<wbr></wbr>punumber=6246741</a></span></div>
+<div style="font-size: 12.8px; background-color: #ffffff; text-align: start;"><span style="font-size: 14px; font-family: &quot;times new roman&quot;;"><span style="font-size: 14px; color: #002060;"><span style="font-size: 14px; text-align: start; background-color: #ffffff;">ICSSE</span> 2014</span><span style="font-size: 14px; color: #222222;">:&nbsp;</span><a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6879759" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber%3D6879759&amp;source=gmail&amp;ust=1478060129584000&amp;usg=AFQjCNFOrsXKWPPoLfxdVHksfyPytdOvtA" style="color: #1155cc;">http://ieeexplore.ieee.org/<wbr></wbr>xpl/mostRecentIssue.jsp?<wbr></wbr>punumber=6879759</a></span></div>
+<div style="font-size: 12.8px; background-color: #ffffff; text-align: start;"><span style="font-size: 14px; font-family: &quot;times new roman&quot;;"><span style="font-size: 14px; color: #002060;"><span style="font-size: 14px; text-align: start; background-color: #ffffff;">ICSSE</span> 2016</span><span style="font-size: 14px; color: #222222;">:&nbsp;</span><a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7548195" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=vi&amp;q=http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber%3D7548195&amp;source=gmail&amp;ust=1478060129584000&amp;usg=AFQjCNGY6PGL-eQdM1uV6s4R-3fPZi14_g" style="color: #1155cc;">http://ieeexplore.ieee.<wbr></wbr>org/xpl/mostRecentIssue.jsp?<wbr></wbr>punumber=7548195</a></span></div>
+<span style="font-size: 14px; font-family: &quot;times new roman&quot;;"><br />
 <br />
-<span style="font-weight: bold; font-size: 16px; color: #c00000;">Special Session organizers</span><br />
-</span><span style="font-size: 16px; color: #002060;"><strong>Prof. Wen-June Wang</strong><br />
-Department of Electrical Engineering<br />
-National Central University<br />
-JhongLi, 32001, Taiwan<br />
-E-mail: <a href="wjwang%40ee.ncu.edu.html">wjwang@ee.ncu.edu.tw</a><br />
-</span><br />
+</span>
 <br />
-</span></span></div>
+</span>
                     </div>
                 </div>
                                             
@@ -71,19 +53,7 @@ E-mail: <a href="wjwang%40ee.ncu.edu.html">wjwang@ee.ncu.edu.tw</a><br />
                     href="#">Others</a>
             </div>
             <div style="float: left; width: 670px; margin-bottom: 10px; padding-top: 5px; clear: both; margin: 0px 5px 0px 5px;">
-                <div id="ctl06_ctl01_pnCactinkhac">
-					
-                    <ul>
-                        
-                                <li class="tinkhac_display"><a href="indexe41c.html?ArticleId=bc474489-26ce-4997-a1c0-b37dce27b202">
-                                    ABSTRACT DEADLINE EXTENSION: MARCH 19, 2017<span style="font: italic 11px Arial, Helvetica, sans-serif; color: #999999">(07/03/2017)</span></a> </li>
-                            
-                                <li class="tinkhac_display"><a href="indexc489.html?ArticleId=f796f938-0681-4d25-b47e-6bcd24536152">
-                                    SPECIAL SESSION 01 FOR ICSSE2017: INTELLIGENT HEALTHCARE SYSTEMS<span style="font: italic 11px Arial, Helvetica, sans-serif; color: #999999"></span></a> </li>
-                            
-                    </ul>
                 
-				</div>
             </div>
 
         </div>
@@ -154,7 +124,7 @@ E-mail: <a href="wjwang%40ee.ncu.edu.html">wjwang@ee.ncu.edu.tw</a><br />
                     <td align="left" style="width: 250px;">
                         <div id="ctl06_ctl01_RadCaptcha1" class="RadCaptcha RadCaptcha_Default" style="float: left;">
 					<span id="ctl06_ctl01_RadCaptcha1_ctl00" style="color:Red;visibility:hidden;"></span><div id="ctl06_ctl01_RadCaptcha1_SpamProtectorPanel">
-						<img id="ctl06_ctl01_RadCaptcha1_CaptchaImage" alt="" src="/resources/Telerik.Web.UI.WebResourceb482.jpg?type=rca&amp;guid=5f75520c-d397-4eb3-93d4-8ff70d00b08f" style="height:50px;width:150px;border-width:0px;display:block;" />
+						<img id="ctl06_ctl01_RadCaptcha1_CaptchaImage" alt="" src="/resources/Telerik.Web.UI.WebResourcef054.jpg?type=rca&amp;guid=db6a8f93-ce9d-4c91-87d3-d332098c1dc5" style="height:50px;width:150px;border-width:0px;display:block;" />
 					</div><input id="ctl06_ctl01_RadCaptcha1_ClientState" name="ctl06_ctl01_RadCaptcha1_ClientState" type="hidden" />
 				</div>
                         <input name="ctl06$ctl01$txtCapCha" type="text" id="ctl06_ctl01_txtCapCha" style="width:204px;" />

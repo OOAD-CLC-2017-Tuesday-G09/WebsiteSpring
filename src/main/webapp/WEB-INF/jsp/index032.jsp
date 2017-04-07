@@ -6,8 +6,8 @@
 	<jsp:body>
 	<div class="topic_display">
     <div class="title_topic">
-        <a style="color: #666; text-transform: uppercase; font-weight: bold;" href="indexb404.html?TopicId=14491cca-f22a-4b92-82c3-a5bd7f2643eb">
-            call for papers</a>
+        <a style="color: #666; text-transform: uppercase; font-weight: bold;" href="index032f.html?TopicId=8fdb6e21-307c-4046-94ab-bd311a2a9930">
+            committees</a>
     </div>
     <div style="margin-top: 10px; width: 670px;">
         <ul>
@@ -15,13 +15,14 @@
                     <li>
                         <div style="margin-left: 5px; margin: 15px 5px; float: left; width: 660px;">
                             <img style="cursor: hand; width: 89px; height: 53px; float: left; margin-right: 5px;"
-                                src="/resources/Services/GetArticleImage80e4.jpg?Id=fc8c1223-a9d2-46b5-9db3-665c778f0ac9" alt="" />
+                                src="/resources/Services/GetArticleImage797c.jpg?Id=dd21088d-cb55-4f9d-ac9c-73553c715cae" alt="" />
                             <h4>
-                                <a class="title_topicdisplay" href="index789b.html?ArticleId=fc8c1223-a9d2-46b5-9db3-665c778f0ac9">
-                                     <span style="color:#666;font-size:13px;font-style:italic;">(08/09/2016)</span></a>
+                                <a class="title_topicdisplay" href="index816d.html?ArticleId=dd21088d-cb55-4f9d-ac9c-73553c715cae">
+                                     <span style="color:#666;font-size:13px;font-style:italic;">(05/09/2016)</span></a>
                             </h4>
                             <h3 class="h3_content">
-                                
+                                <div><br />
+</div>
                             </h3>
                         </div>
                     </li>
@@ -33,5 +34,5 @@
     </div>
 </div>
 	</jsp:body>
-</t:template>
+	</t:template>
 

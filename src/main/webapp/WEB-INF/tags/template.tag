@@ -293,7 +293,7 @@
 								<div id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu" class="RadMenu RadMenu_Green rmSized" style="height: 40px; z-index: 1; width: 100%;">
 										<ul class="rmRootGroup rmHorizontal">
 											<li class="rmItem rmFirst">
-												<a href="Default.aspx?PageId=8cb7e0c5-10f3-438b-8881-a74c24b373e3" class="rmLink rmRootLink">
+												<a href="home" class="rmLink rmRootLink">
 													<span class="rmText">Home</span>
 												</a>
 											</li>
