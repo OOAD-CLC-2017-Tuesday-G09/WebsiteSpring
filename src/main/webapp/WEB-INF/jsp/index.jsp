@@ -84,11 +84,11 @@
 						</tr>
 			    	</thead>
 		    		<tbody>
-					<%-- <c:forEach items="${news}" var="news">
+					<c:forEach items="${news}" var="news">
 						<tr>
-							<td>${news.Content}</td>
+							<td>${news.content}</td>
 						</tr>
-					</c:forEach> --%>
+					</c:forEach>
 		    		</tbody>
 		    	</table>
 		    </div>

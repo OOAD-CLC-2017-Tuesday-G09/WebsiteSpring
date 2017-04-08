@@ -6,7 +6,8 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import model.NewsConten;;
+import model.NewsConten;
+import model.UserDocument;;
 
 @Repository("newsDao")
 public class NewsDaoImpl extends AbstractDao<Integer, NewsConten> implements NewsDao {
@@ -26,11 +27,8 @@ public class NewsDaoImpl extends AbstractDao<Integer, NewsConten> implements New
 
 	@SuppressWarnings("unchecked")
 	public List<NewsConten> findAllNews() {
-		Criteria criteria = createEntityCriteria().addOrder(Order.asc("firstName"));
-		criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);//To avoid duplicates.
-		List<NewsConten> content = (List<NewsConten>) criteria.list();
-
-		return content;
+	    Criteria crit = createEntityCriteria();
+        return (List<NewsConten>)crit.list();
 	}
 
 	public void save(NewsConten content) {
