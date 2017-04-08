@@ -70,32 +70,13 @@
 					</div></div>
 				</div>
   --%>
-  	<div class="generic-container">
-		<div class="panel panel-default">
-			  <!-- Default panel contents -->
-		  	<div class="panel-heading"><span class="lead">List of Users </span></div>
-		  	<div class="tablecontainer">
-				<table class="table table-hover">
-		    		<thead>
-			      		<tr>
-					        <th>contex</th>
-					        <th width="100"></th>
-					        <th width="100"></th>
-						</tr>
-			    	</thead>
-		    		<tbody>
-					<c:forEach items="${news}" var="news">
-						<tr>
-							<td>${news.content}</td>
-						</tr>
-					</c:forEach>
-		    		</tbody>
-		    	</table>
-		    </div>
-		</div>
-	 	<div class="well">
-	 		<a href="<c:url value='/newuser' />">Add New User</a>
-	 	</div>
-   	</div>
+  	
+  <form:form method="POST" modelAttribute="news" class="form-horizontal">
+  <form:input type="hidden" path="id" id="id"/>
+  	<div class="row">
+  	 <textarea class="ckeditor" name="newscontent" id="newscontent"></textarea>
+  	</div>
+	<input type="submit" value="submit" class="btn btn-primary btn-sm"/> or <a href="<c:url value='/list' />">Cancel</a>
+   </form:form>
 		</jsp:body>
 	</t:template>

@@ -131,6 +131,22 @@ public class FileUploadController {
  		return "index";
  	}
     
+	@RequestMapping(value = { "/newscontent" }, method = RequestMethod.POST)
+	public String saveNews(@Valid NewsConten news, BindingResult result,
+			ModelMap model) {
+
+		if (result.hasErrors()) {
+			return "index";
+		}
+
+		newsService.saveNews(news);
+		
+		model.addAttribute("news", news);
+		model.addAttribute("success", "News " + news.getId()  + " comit successfully");
+		//return "success";
+		return "ckeditor";
+	}
+
   /*  @RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
 	public String listUsers(ModelMap model) {
 
