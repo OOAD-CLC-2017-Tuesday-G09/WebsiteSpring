@@ -1,10 +1,10 @@
-	<%@ page language="java" contentType="text/html; charset=UTF-8"
-		pageEncoding="UTF-8"%>
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
-	
+	<script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
 	<t:template>
 		<jsp:body>		
-					</tr><tr valign="top">
+					<%-- </tr><tr valign="top">
 			<td><div id="pnCenter">
 				<div id="pnCenterDisplay" style="width:692px;float:left">
 					<div id="indexMain" style="float:left;"><div>
@@ -69,6 +69,33 @@
 	
 					</div></div>
 				</div>
-			
+  --%>
+  	<div class="generic-container">
+		<div class="panel panel-default">
+			  <!-- Default panel contents -->
+		  	<div class="panel-heading"><span class="lead">List of Users </span></div>
+		  	<div class="tablecontainer">
+				<table class="table table-hover">
+		    		<thead>
+			      		<tr>
+					        <th>contex</th>
+					        <th width="100"></th>
+					        <th width="100"></th>
+						</tr>
+			    	</thead>
+		    		<tbody>
+					<%-- <c:forEach items="${news}" var="news">
+						<tr>
+							<td>${news.Content}</td>
+						</tr>
+					</c:forEach> --%>
+		    		</tbody>
+		    	</table>
+		    </div>
+		</div>
+	 	<div class="well">
+	 		<a href="<c:url value='/newuser' />">Add New User</a>
+	 	</div>
+   	</div>
 		</jsp:body>
 	</t:template>

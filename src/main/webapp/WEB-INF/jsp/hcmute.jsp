@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
-<t:page page="">
+<<t:template>
 	<jsp:body>		
 <div class="bg_display">
     <div class="display" style="float: left; width: 100%;">
@@ -395,8 +395,7 @@ PAPER FORMAT TEMPLATE DOWNLOAD</strong></a>&nbsp;<br />
 		</div></td>
 	</tr>
 	</jsp:body>
-	</t:page>
-    
+    </t:template>
 <script type="text/javascript">
 //<![CDATA[
 var Page_ValidationSummaries =  new Array(document.getElementById("ctl06_ctl01_ValidationSummary1"));

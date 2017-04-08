@@ -10,7 +10,8 @@
 		<title>
 	WELCOME TO ICSSE 2017
 	</title>
-	
+	<link href="<c:url value='/resources/CSS/bootstrap.css' />" rel="stylesheet"></link>
+	<link href="<c:url value='/resources/CSS/app.css' />" rel="stylesheet"></link>
 	<link href="/resources/CSS/show_img.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="/resources/Portlets/PanelBar/js/jquery-1.7.2.min.js"></script>
     <script src="/resources/Scripts/Common.js" type="text/javascript"></script>
@@ -318,16 +319,22 @@
 																<span class="rmText">Committees</span>
 															</a>
 														</li>
+												
 													</ul>
 												</div>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=fc8c1223-a9d2-46b5-9db3-665c778f0ac9" class="rmLink rmRootLink">
+												<a href="edit" class="rmLink rmRootLink">
 													<span class="rmText">Call for papers</span>
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef" class="rmLink rmRootLink">
+												<a href="ckedit" class="rmLink rmRootLink">
+													<span class="rmText">Ckeditor</span>
+												</a>
+											</li>
+											<li class="rmItem ">
+												<a href="sub" class="rmLink rmRootLink">
 													<span class="rmText">Submission</span>
 												</a>
 											</li>
@@ -423,7 +430,7 @@
 															SPECIAL SESSION 02 FOR ICSSE2017: FUZZY SYSTEMS AND ITS APPLICATIONS</a></a> </li>
 													
 			
-														<li><a href="/?ArticleId=bc474489-26ce-4997-a1c0-b37dce27b202">
+														<li><a href="id">
 															<p>Create Date 07/03/2017</p>
 															ABSTRACT DEADLINE EXTENSION: MARCH 19, 2017</a></a> </li>
 													

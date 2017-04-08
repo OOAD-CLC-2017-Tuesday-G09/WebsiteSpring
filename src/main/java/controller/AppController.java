@@ -29,18 +29,18 @@ import hello.StorageService;
 import model.FileBucket;
 import model.User;
 import model.UserDocument;
-import service.IUserDocumentService;
-import service.IUserService;
+import service.UserDocumentService;
+import service.UserService;
 import util.FileValidator;
 
 
 //@Controller
 public class AppController {
 	 @Autowired
-	    IUserService userService;
+	    UserService userService;
 	     
 	    @Autowired
-	    IUserDocumentService userDocumentService;
+	    UserDocumentService userDocumentService;
 	     
 	    @Autowired
 	    MessageSource messageSource;

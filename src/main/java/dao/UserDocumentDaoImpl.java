@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import model.UserDocument;
 
 @Repository("userDocumentDao")
-public class UserDocumentDaoImpl extends AbstractDao<Integer, UserDocument> implements IUserDocumentDao{
+public class UserDocumentDaoImpl extends AbstractDao<Integer, UserDocument> implements UserDocumentDao{
  
     @SuppressWarnings("unchecked")
     public List<UserDocument> findAll() {

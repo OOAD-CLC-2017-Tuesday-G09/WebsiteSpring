@@ -10,6 +10,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -17,7 +18,6 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 import hello.StorageProperties;
 import hello.StorageService;
-
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)
 public class Application extends SpringBootServletInitializer {
@@ -30,13 +30,13 @@ public class Application extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(Application.class);
 	}
-//	@Bean
-//	CommandLineRunner init(StorageService storageService) {
-//		return (args) -> {
-//			storageService.deleteAll();
-//			storageService.init(); 
-//		};
-//	}
+	@Bean
+	CommandLineRunner init(StorageService storageService) {
+		return (args) -> {
+		storageService.deleteAll();
+		storageService.init(); 
+		};
+}
 	@Override
     public void onStartup(ServletContext container) {
       XmlWebApplicationContext appContext = new XmlWebApplicationContext();

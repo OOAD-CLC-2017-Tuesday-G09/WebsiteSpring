@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.User;
 
-public interface IUserDao {
+public interface UserDao {
 	User findById(int id);
 
 	User findBySSO(String sso);

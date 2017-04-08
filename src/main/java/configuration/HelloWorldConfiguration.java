@@ -15,7 +15,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 import configuration.Application;
-
 @EnableWebMvc
 @Configuration
 public class HelloWorldConfiguration extends WebMvcConfigurerAdapter {
@@ -32,7 +31,7 @@ public class HelloWorldConfiguration extends WebMvcConfigurerAdapter {
 	@Bean
 	public InternalResourceViewResolver getInternalResourceViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/");
+		resolver.setPrefix("/WEB-INF/jsp/");
 		resolver.setSuffix(".jsp");
 		return resolver;
 	}
@@ -46,4 +45,5 @@ public class HelloWorldConfiguration extends WebMvcConfigurerAdapter {
         messageSource.setBasename("messages");
         return messageSource;
     }
+    
 }

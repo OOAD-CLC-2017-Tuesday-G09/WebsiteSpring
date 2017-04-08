@@ -70,11 +70,11 @@ public class DriveService {
 	 * Be sure to specify the name of your application. If the application name is {@code null} or
 	 * blank, the application will log a warning. Suggested format is "MyCompany-ProductName/1.0".
 	 */
-	private static final String APPLICATION_NAME = "Nguyễn Văn Phi Tước";
+	private static final String APPLICATION_NAME = "Group 09";
 
 	private static final String UPLOAD_FILE_PATH = "Enter File Path";
 	private static final String DIR_FOR_DOWNLOADS = "Enter Download Directory";
-	private static final String GMAIL = "nguyenvanphituoc@gmail.com";
+	private static final String GMAIL = "14110425@student.hcmute.edu.vn";
 	private static final java.io.File UPLOAD_FILE = new java.io.File(UPLOAD_FILE_PATH);
 
 	/** Directory to store user credentials. */

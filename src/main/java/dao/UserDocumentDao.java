@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.UserDocument;
 
-public interface IUserDocumentDao {
+public interface UserDocumentDao {
 	 
     List<UserDocument> findAll();
      
