@@ -51,15 +51,41 @@ public class FileUploadController {
     
   //home
     @GetMapping("/home")
-    public String showEditor(Model model) throws IOException {
+    public String showHome(Model model) throws IOException {
         return "jsp/Default71a5";
     }
     
-   /*//Venue_Hotel
+   //Venue_Hotel
     @GetMapping("/venue")
-    public String showEditor(Model model) throws IOException {
+    public String showVenue(Model model) throws IOException {
         return "jsp/Default26a6";
-    }*/
+    }
+    
+  //Call
+    @GetMapping("/call")
+    public String showCall(Model model) throws IOException {
+        return "jsp/indexb404";
+    }
+    
+  //submission
+    @GetMapping("/sub")
+    public String showSubmission(Model model) throws IOException {
+        return "jsp/indexd478";
+    }
+    
+    //regis
+    @GetMapping("/r")
+    public String showRegis(Model model) throws IOException {
+        return "jsp/indexa8ef";
+    }
+    
+  //keynote
+    @GetMapping("/k")
+    public String showKey(Model model) throws IOException {
+        return "jsp/index547f";
+    }
+    
+    
     
 
     @GetMapping("/files/{filename:.+}")

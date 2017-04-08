@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+
 <t:template>
 	<jsp:body>
 		<div class="bg_display">
@@ -285,5 +286,5 @@ Address: 135 Nam Ky Khoi Nghia, Ben Thanh, District 1, Ho Chi Minh City</span><b
         </div>
     </div>
 </div>
-	</jsp:body
+	</jsp:body>
 	</t:template>

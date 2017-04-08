@@ -322,22 +322,22 @@
 												</div>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=fc8c1223-a9d2-46b5-9db3-665c778f0ac9" class="rmLink rmRootLink">
+												<a href="call" class="rmLink rmRootLink">
 													<span class="rmText">Call for papers</span>
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef" class="rmLink rmRootLink">
+												<a href="sub" class="rmLink rmRootLink">
 													<span class="rmText">Submission</span>
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=707e0e24-5220-4821-a40f-4041eb76cc1a" class="rmLink rmRootLink">
+												<a href="r" class="rmLink rmRootLink">
 													<span class="rmText">Registration</span>
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=be204435-0615-4fc3-aa86-392d871decc8" class="rmLink rmRootLink">
+												<a href="k" class="rmLink rmRootLink">
 													<span class="rmText">Keynote Speakers</span>
 												</a>
 											</li>
