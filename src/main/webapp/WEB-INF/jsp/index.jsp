@@ -71,12 +71,20 @@
 				</div>
   --%>
   	
-    <form action="" method="post">
+  	<%-- <form:form method="POST" modelAttribute="news" class="form-horizontal">
  
        <textarea class="ckeditor" name="editor1" cols="80" rows="10">
         
            <p>Hello <strong>CKEditor</strong></p>
             
        </textarea>
+<input type="submit" value="commit" class="btn btn-primary btn-sm"/>
+</form:form>
+ --%>
+ 		<c:forEach items="${news}" var="user">
+						<tr>
+							<td>${user.content}</td>
+						</tr>
+					</c:forEach>
 		</jsp:body>
 	</t:template>

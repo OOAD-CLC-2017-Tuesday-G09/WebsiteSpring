@@ -295,7 +295,7 @@
 								<div id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu" class="RadMenu RadMenu_Green rmSized" style="height: 40px; z-index: 1; width: 100%;">
 										<ul class="rmRootGroup rmHorizontal">
 											<li class="rmItem rmFirst">
-												<a href="Default.aspx?PageId=8cb7e0c5-10f3-438b-8881-a74c24b373e3" class="rmLink rmRootLink">
+												<a href="home" class="rmLink rmRootLink">
 													<span class="rmText">Home</span>
 												</a>
 											</li>
@@ -326,6 +326,7 @@
 											</li>
 											<li class="rmItem ">
 												<a href="edit" class="rmLink rmRootLink">
+												<a href="call" class="rmLink rmRootLink">
 													<span class="rmText">Call for papers</span>
 												</a>
 											</li>
@@ -335,17 +336,18 @@
 												</a>
 											</li>
 											<li class="rmItem ">
+
 												<a href="sub" class="rmLink rmRootLink">
 													<span class="rmText">Submission</span>
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=707e0e24-5220-4821-a40f-4041eb76cc1a" class="rmLink rmRootLink">
+												<a href="r" class="rmLink rmRootLink">
 													<span class="rmText">Registration</span>
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=be204435-0615-4fc3-aa86-392d871decc8" class="rmLink rmRootLink">
+												<a href="k" class="rmLink rmRootLink">
 													<span class="rmText">Keynote Speakers</span>
 												</a>
 											</li>
@@ -355,7 +357,7 @@
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="Default.aspx?ArticleId=242b6486-aeb4-472f-b74f-779069bbd957" class="rmLink rmRootLink">
+												<a href="venue" class="rmLink rmRootLink">
 													<span class="rmText">Venue & Hotel</span>
 												</a>
 											</li>

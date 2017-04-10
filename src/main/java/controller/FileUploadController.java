@@ -69,41 +69,6 @@ public class FileUploadController {
 	protected void initBinder(WebDataBinder binder) {
 	   binder.setValidator(fileValidator);
 	}
-    //home
-    @GetMapping("/home")
-    public String showHome(Model model) throws IOException {
-        return "jsp/Default71a5";
-    }
-    
-   //Venue_Hotel
-    @GetMapping("/venue")
-    public String showVenue(Model model) throws IOException {
-        return "jsp/Default26a6";
-    }
-    
-  //Call
-    @GetMapping("/call")
-    public String showCall(Model model) throws IOException {
-        return "jsp/indexb404";
-    }
-    
-  //submission
-    @GetMapping("/sub")
-    public String showSubmission(Model model) throws IOException {
-        return "jsp/indexd478";
-    }
-    
-    //regis
-    @GetMapping("/r")
-    public String showRegis(Model model) throws IOException {
-        return "jsp/indexa8ef";
-    }
-    
-  //keynote
-    @GetMapping("/k")
-    public String showKey(Model model) throws IOException {
-        return "jsp/index547f";
-    }
     
 /*	
     @GetMapping("/")
@@ -121,14 +86,54 @@ public class FileUploadController {
     
 		return "ckeditor";
     }*/
-    @GetMapping("/ckedit")
+   @GetMapping("/ckedit")
     public String showEditor(Model model) throws IOException {
+	   
         return "ckeditor";
     }
+   /*
     @GetMapping("/sub")
     public String showHcmute(Model model) throws IOException {
         return "hcmute";
+    }   
+    
+  //home
+    @GetMapping("/home")
+    public String showHome(Model model) throws IOException {
+        return "Default71a5";
     }
+    
+   //Venue_Hotel
+    @GetMapping("/venue")
+    public String showVenue(Model model) throws IOException {
+        return "Default26a6";
+    }
+    
+  //Call
+    @GetMapping("/call")
+    public String showCall(Model model) throws IOException {
+        return "indexb404";
+    }
+    
+  //submission
+    @GetMapping("/sub")
+    public String showSubmission(Model model) throws IOException {
+        return "indexd478";
+    }
+    
+    //regis
+    @GetMapping("/r")
+    public String showRegis(Model model) throws IOException {
+        return "indexa8ef";
+    }
+    
+  //keynote
+    @GetMapping("/k")
+    public String showKey(Model model) throws IOException {
+        return "index547f";
+    }*/
+    
+    
     @GetMapping("/files/{filename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
@@ -171,15 +176,15 @@ public class FileUploadController {
 	public String newsContent(ModelMap model) {
 		NewsConten news = new NewsConten();
 		model.addAttribute("news", news);
-		model.addAttribute("edit", false);
-		return "index";
+		//model.addAttribute("edit", false);
+		return "ckeditor";
 	}
 	@RequestMapping(value = { "/newscontent" }, method = RequestMethod.POST)
 	public String saveNews(@Valid NewsConten news, BindingResult result,
 			ModelMap model) {
 
 		if (result.hasErrors()) {
-			return "index";
+			return "ckeditor";
 		}
 
 		newsService.saveNews(news);
@@ -187,7 +192,7 @@ public class FileUploadController {
 		model.addAttribute("news", news);
 		model.addAttribute("success", "newscontent " + news.getContent()  + " comit successfully");
 		//return "success";
-		return "ckeditor";
+		return "index";
 	}
 
   /*  @RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
