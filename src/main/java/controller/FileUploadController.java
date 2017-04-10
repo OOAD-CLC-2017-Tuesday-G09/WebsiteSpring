@@ -69,6 +69,42 @@ public class FileUploadController {
 	protected void initBinder(WebDataBinder binder) {
 	   binder.setValidator(fileValidator);
 	}
+    //home
+    @GetMapping("/home")
+    public String showHome(Model model) throws IOException {
+        return "jsp/Default71a5";
+    }
+    
+   //Venue_Hotel
+    @GetMapping("/venue")
+    public String showVenue(Model model) throws IOException {
+        return "jsp/Default26a6";
+    }
+    
+  //Call
+    @GetMapping("/call")
+    public String showCall(Model model) throws IOException {
+        return "jsp/indexb404";
+    }
+    
+  //submission
+    @GetMapping("/sub")
+    public String showSubmission(Model model) throws IOException {
+        return "jsp/indexd478";
+    }
+    
+    //regis
+    @GetMapping("/r")
+    public String showRegis(Model model) throws IOException {
+        return "jsp/indexa8ef";
+    }
+    
+  //keynote
+    @GetMapping("/k")
+    public String showKey(Model model) throws IOException {
+        return "jsp/index547f";
+    }
+    
 /*	
     @GetMapping("/")
     public String listUploadedFiles(Model model) throws IOException {
@@ -130,7 +166,14 @@ public class FileUploadController {
  		model.addAttribute("news", news);
  		return "index";
  	}
-    
+   
+	@RequestMapping(value = { "/newscontent" }, method = RequestMethod.GET)
+	public String newsContent(ModelMap model) {
+		NewsConten news = new NewsConten();
+		model.addAttribute("news", news);
+		model.addAttribute("edit", false);
+		return "index";
+	}
 	@RequestMapping(value = { "/newscontent" }, method = RequestMethod.POST)
 	public String saveNews(@Valid NewsConten news, BindingResult result,
 			ModelMap model) {
@@ -142,7 +185,7 @@ public class FileUploadController {
 		newsService.saveNews(news);
 		
 		model.addAttribute("news", news);
-		model.addAttribute("success", "News " + news.getId()  + " comit successfully");
+		model.addAttribute("success", "newscontent " + news.getContent()  + " comit successfully");
 		//return "success";
 		return "ckeditor";
 	}

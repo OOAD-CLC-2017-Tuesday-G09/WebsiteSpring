@@ -20,6 +20,7 @@
 	<link href="/resources/Components/lightbox/css/lightbox.css" rel="stylesheet" type="text/css" />
     <script src="/resources/Components/lightbox/js/lightbox.min.js" type="text/javascript"></script>
     <link href="/resources/CSS/search_Article.css" rel="stylesheet" />
+    	<script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
     <script language="javascript" type="text/javascript">
         function SearchProcess(event) {
             if (event.keyCode == 13) {
@@ -329,7 +330,7 @@
 												</a>
 											</li>
 											<li class="rmItem ">
-												<a href="ckedit" class="rmLink rmRootLink">
+												<a href="newscontent" class="rmLink rmRootLink">
 													<span class="rmText">Ckeditor</span>
 												</a>
 											</li>

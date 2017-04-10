@@ -71,12 +71,12 @@
 				</div>
   --%>
   	
-  <form:form method="POST" modelAttribute="news" class="form-horizontal">
-  <form:input type="hidden" path="id" id="id"/>
-  	<div class="row">
-  	 <textarea class="ckeditor" name="newscontent" id="newscontent"></textarea>
-  	</div>
-	<input type="submit" value="submit" class="btn btn-primary btn-sm"/> or <a href="<c:url value='/list' />">Cancel</a>
-   </form:form>
+    <form action="" method="post">
+ 
+       <textarea class="ckeditor" name="editor1" cols="80" rows="10">
+        
+           <p>Hello <strong>CKEditor</strong></p>
+            
+       </textarea>
 		</jsp:body>
 	</t:template>
