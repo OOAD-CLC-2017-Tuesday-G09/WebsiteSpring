@@ -91,50 +91,49 @@ public class FileUploadController {
 	   
         return "ckeditor";
     }
-   /*
-    @GetMapping("/sub")
+   
+/*    @GetMapping("/sub")
     public String showHcmute(Model model) throws IOException {
         return "hcmute";
-    }   
+    }   */
     
   //home
     @GetMapping("/home")
     public String showHome(Model model) throws IOException {
-        return "Default71a5";
+        return "Menu_home";
     }
     
    //Venue_Hotel
-    @GetMapping("/venue")
+    @GetMapping("/Venue&hotel")
     public String showVenue(Model model) throws IOException {
-        return "Default26a6";
+        return "Menu_Venue&hotel";
     }
     
   //Call
     @GetMapping("/call")
     public String showCall(Model model) throws IOException {
-        return "indexb404";
+        return "Menu_call";
     }
-    
+   
   //submission
-    @GetMapping("/sub")
+    @GetMapping("/submission")
     public String showSubmission(Model model) throws IOException {
-        return "indexd478";
+        return "Menu_submission";
     }
     
-    //regis
-    @GetMapping("/r")
+  //regis
+    @GetMapping("/registration")
     public String showRegis(Model model) throws IOException {
-        return "indexa8ef";
+        return "Menu_registration";
+    }
+
+  //keynote
+    @GetMapping("/keynote")
+    public String showKey(Model model) throws IOException {
+        return "Menu_Keynote";
     }
     
-  //keynote
-    @GetMapping("/k")
-    public String showKey(Model model) throws IOException {
-        return "index547f";
-    }*/
-    
-    
-    @GetMapping("/files/{filename:.+}")
+     @GetMapping("/files/{filename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
 
@@ -164,36 +163,76 @@ public class FileUploadController {
     public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
         return ResponseEntity.notFound().build();
     }
-    @RequestMapping(value = { "/", "/newslist" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/", "/demo" }, method = RequestMethod.GET)
  	public String listNews(ModelMap model) {
-
- 		List<NewsConten> news = newsService.findAllNews();
+		List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
  		return "index";
  	}
-   
-	@RequestMapping(value = { "/newscontent" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/newscontent" }, method = RequestMethod.GET)
 	public String newsContent(ModelMap model) {
-		NewsConten news = new NewsConten();
-		model.addAttribute("news", news);
-		//model.addAttribute("edit", false);
+		NewsConten newlist = new NewsConten();
+		model.addAttribute("newlist", newlist);
+		List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+		model.addAttribute("edit", false);
 		return "ckeditor";
 	}
+    @RequestMapping(value = { "/news-{Id}" }, method = RequestMethod.GET)
+	public String ListNews(@PathVariable String Id, ModelMap model) {
+		Integer idnews = Integer.parseInt(Id);
+		NewsConten newlist = newsService.findById(idnews);
+		model.addAttribute("newlist", newlist);
+		
+		List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+		return "NewsIfo";
+	}
 	@RequestMapping(value = { "/newscontent" }, method = RequestMethod.POST)
-	public String saveNews(@Valid NewsConten news, BindingResult result,
+	public String saveNews(NewsConten news, BindingResult result,
 			ModelMap model) {
 
 		if (result.hasErrors()) {
-			return "ckeditor";
+			return "Menu_home";
 		}
 
 		newsService.saveNews(news);
 		
 		model.addAttribute("news", news);
-		model.addAttribute("success", "newscontent " + news.getContent()  + " comit successfully");
+		model.addAttribute("success", " comit successfully");
 		//return "success";
-		return "index";
+		return "ckeditor";
 	}
+	@RequestMapping(value = { "/edit-news-{Id}" }, method = RequestMethod.GET)
+	public String editNews(@PathVariable String Id, ModelMap model) {
+		Integer idnews = Integer.parseInt(Id);
+		NewsConten newlist = newsService.findById(idnews);
+		model.addAttribute("newlist", newlist);
+		
+		List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+		model.addAttribute("edit", true);
+		return "ckeditor";
+	}
+	
+	/**
+	 * This method will be called on form submission, handling POST request for
+	 * updating user in database. It also validates the user input
+	 */
+	@RequestMapping(value = { "/edit-news-{Id}" }, method = RequestMethod.POST)
+	public String updateNews(@Valid NewsConten news, BindingResult result,
+				ModelMap model, @PathVariable String Id) {
+	
+			if (result.hasErrors()) {
+				return "Menu_home";
+			}
+	
+			newsService.updateNews(news);
+	
+			model.addAttribute("success", "NewsConten " + news.getTitle() + " "+ news.getContent() +" updated successfully");
+			return "ckeditor";
+		}
+
 
   /*  @RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
 	public String listUsers(ModelMap model) {

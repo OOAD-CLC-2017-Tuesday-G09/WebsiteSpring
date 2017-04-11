@@ -31,6 +31,7 @@ public class NewsServiceImpl implements NewsService{
 	public void updateNews(NewsConten news) {
 		NewsConten entity = dao.findById(news.getId());
 		if(entity!=null){
+			entity.setTitle(news.getTitle());
 			entity.setContent(news.getContent());
 		}
 		

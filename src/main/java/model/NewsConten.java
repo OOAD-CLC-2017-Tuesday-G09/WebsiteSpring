@@ -18,14 +18,18 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Table(name="News")
 public class NewsConten {
  
+
     @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
+      
+    @NotEmpty
+    @Column(name="TITLE", nullable=false)
+    private String title;
+ 
     @NotEmpty
     @Column(name="CONTENT", nullable=false)
-    private String Content;
-/* 
-        @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private Set<UserDocument> userDocuments = new HashSet<UserDocument>();*/
+    private String content;
+
      
     public Integer getId() {
         return id;
@@ -34,16 +38,25 @@ public class NewsConten {
     public void setId(Integer id) {
         this.id = id;
     }
+
+ 
+    public String getTitle() {
+        return title;
+    }
+ 
+    public void setTitle(String title) {
+        this.title = title;
+    }
  
     public String getContent() {
-        return Content;
+        return content;
     }
  
-    public void setContent(String Content) {
-        this.Content = Content;
+    public void setContent(String content) {
+        this.content = content;
     }
  
-   
+  
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -66,17 +79,12 @@ public class NewsConten {
                 return false;
         } else if (!id.equals(other.id))
             return false;
-        if (Content == null) {
-            if (other.Content != null)
-                return false;
-        } else if (!Content.equals(other.Content))
-            return false;
         return true;
     }
  
     @Override
     public String toString() {
-        return "User [id=" + id + ", Content=" + Content +"]";
+        return "NewsConten [id=" + id  + ", title=" + title + ", content=" + content
+                 + "]";
     }
- 
 }

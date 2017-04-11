@@ -1,15 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Registration Confirmation Page</title>
-	<link href="<c:url value='/resources/CSS/bootstrap.css' />" rel="stylesheet"></link>
-	<link href="<c:url value='/resources/CSS/app.css' />" rel="stylesheet"></link>
-</head>
-<body>
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	<%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+	<script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
+	<t:template>
+		<jsp:body>	
 	<div class="generic-container">
 		<div class="alert alert-success lead">
 	    	${success}
@@ -22,6 +16,5 @@
 			Go to <a href="<c:url value='/list' />">Users List</a>
 		</span>
 	</div>
-</body>
-
-</html>
+</jsp:body>
+</t:template>

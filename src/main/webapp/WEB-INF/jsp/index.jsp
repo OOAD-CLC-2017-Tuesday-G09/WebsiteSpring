@@ -81,10 +81,15 @@
 <input type="submit" value="commit" class="btn btn-primary btn-sm"/>
 </form:form>
  --%>
- 		<c:forEach items="${news}" var="user">
+ 		<c:forEach items="${news}" var="news">
 						<tr>
-							<td>${user.content}</td>
-						</tr>
-					</c:forEach>
+							<%-- <td>${news.title}</td> --%>
+							<td>${news.content}</td>
+							<td>${news.title}</td>
+							<td><a href="<c:url value='/edit-news-${news.id}' />" class="btn btn-success custom-width">edit</a></td>
+						</tr>		
+										
+					</c:forEach>	
+
 		</jsp:body>
 	</t:template>

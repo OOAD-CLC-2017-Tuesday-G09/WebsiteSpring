@@ -13,7 +13,7 @@ import model.UserDocument;;
 public class NewsDaoImpl extends AbstractDao<Integer, NewsConten> implements NewsDao {
 
 	public NewsConten findById(int id) {
-		NewsConten conten = getByKey(id);
+		NewsConten conten= getByKey(id);
 		return conten;
 	}
 
