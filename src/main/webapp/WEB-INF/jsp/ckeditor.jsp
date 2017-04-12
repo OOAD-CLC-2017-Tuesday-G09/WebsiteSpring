@@ -3,19 +3,23 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 	<script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
 	<t:template>
 		<jsp:body>
 	<form method="POST" modelAttribute="news" class="form-horizontal">
-			<h4>Title news</h2>		
+			<h4>Title news</h4>		
 	<input type="text" path="title" id="title" name="title" value="${newlist.title}" class="form-control input-sm"/>
-	<h4>Content:</h2>		
+	<h4>Content:</h4>		
        <textarea class="ckeditor" path="Content" name="Content" cols="80" rows="10">
             ${newlist.content}
        </textarea>
-<input type="submit" value="commit" class="btn btn-primary btn-sm"/>
+<h4>Date post</h4>	
+	<input type="date" path="datepost" id="datepost" name ="datepost" value="${newlist.datepost}"class="form-control input-sm"/>
+	</br>
+<input type="submit" value="commit" class="btn btn-primary"/>
 </form>
-<div class="alert alert-success lead">
+<div class="alert alert-success lead"data-dismiss="alert" aria-label="Close" >
 	    	${success}
 		</div>
 </jsp:body>

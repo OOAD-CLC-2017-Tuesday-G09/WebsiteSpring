@@ -35,7 +35,7 @@ public class NewsDaoImpl extends AbstractDao<Integer, NewsConten> implements New
 		persist(content);
 	}
 
-	public void deleteById(String id) {
+	public void deleteById(int id) {
 		Criteria crit = createEntityCriteria();
 		crit.add(Restrictions.eq("id", id));
 		NewsConten content = (NewsConten)crit.uniqueResult();

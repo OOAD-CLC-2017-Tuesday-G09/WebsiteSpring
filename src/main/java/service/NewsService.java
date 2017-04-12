@@ -13,7 +13,7 @@ public interface NewsService {
 	
 	void updateNews(NewsConten news);
 	
-	void deleteNewByID(String ID);
+	void deleteNewByID(int ID);
 
 	List<NewsConten> findAllNews(); 
 	

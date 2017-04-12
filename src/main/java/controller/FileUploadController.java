@@ -24,11 +24,9 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import service.NewsService;
 import service.NewsServiceImpl;
 import service.UserDocumentService;
-import service.UserService;
 import model.FileBucket;
 import model.UserDocument;
 import util.FileValidator;
-import model.User;
 import model.NewsConten;
 
 import hello.StorageFileNotFoundException;
@@ -49,8 +47,6 @@ public class FileUploadController {
    private final StorageService storageService;
 	@Autowired
 	NewsService newsService;
-	@Autowired
-	UserService userService;
 	
 	@Autowired
 	UserDocumentService userDocumentService;
@@ -88,7 +84,10 @@ public class FileUploadController {
     }*/
    @GetMapping("/ckedit")
     public String showEditor(Model model) throws IOException {
-	   
+	   List<NewsConten> news = newsService.findAllNews();
+		model.addAttribute("news", news);
+		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
         return "ckeditor";
     }
    
@@ -100,36 +99,60 @@ public class FileUploadController {
   //home
     @GetMapping("/home")
     public String showHome(Model model) throws IOException {
+    	List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
         return "Menu_home";
     }
     
    //Venue_Hotel
     @GetMapping("/Venue&hotel")
     public String showVenue(Model model) throws IOException {
+    	List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
         return "Menu_Venue&hotel";
     }
     
   //Call
     @GetMapping("/call")
     public String showCall(Model model) throws IOException {
+    	List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
         return "Menu_call";
     }
    
   //submission
     @GetMapping("/submission")
     public String showSubmission(Model model) throws IOException {
+    	List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
         return "Menu_submission";
     }
     
   //regis
     @GetMapping("/registration")
     public String showRegis(Model model) throws IOException {
+    	List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
         return "Menu_registration";
     }
 
   //keynote
     @GetMapping("/keynote")
     public String showKey(Model model) throws IOException {
+    	List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
         return "Menu_Keynote";
     }
     
@@ -163,10 +186,12 @@ public class FileUploadController {
     public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
         return ResponseEntity.notFound().build();
     }
-    @RequestMapping(value = { "/", "/demo" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/", "/managenews" }, method = RequestMethod.GET)
  	public String listNews(ModelMap model) {
 		List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
  		return "index";
  	}
     @RequestMapping(value = { "/newscontent" }, method = RequestMethod.GET)
@@ -180,26 +205,31 @@ public class FileUploadController {
 	}
     @RequestMapping(value = { "/news-{Id}" }, method = RequestMethod.GET)
 	public String ListNews(@PathVariable String Id, ModelMap model) {
-		Integer idnews = Integer.parseInt(Id);
+    	Integer idnews = Integer.parseInt(Id);
 		NewsConten newlist = newsService.findById(idnews);
 		model.addAttribute("newlist", newlist);
 		
 		List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
+
+ 		List<UserDocument> documents = userDocumentService.findAllByNewsId(idnews);
+		model.addAttribute("documents", documents);
 		return "NewsIfo";
 	}
 	@RequestMapping(value = { "/newscontent" }, method = RequestMethod.POST)
-	public String saveNews(NewsConten news, BindingResult result,
+	public String saveNews(NewsConten newspost, BindingResult result,
 			ModelMap model) {
 
 		if (result.hasErrors()) {
 			return "Menu_home";
 		}
 
-		newsService.saveNews(news);
+		newsService.saveNews(newspost);
 		
-		model.addAttribute("news", news);
+		model.addAttribute("news", newspost);
 		model.addAttribute("success", " comit successfully");
+		List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
 		//return "success";
 		return "ckeditor";
 	}
@@ -229,10 +259,14 @@ public class FileUploadController {
 	
 			newsService.updateNews(news);
 	
-			model.addAttribute("success", "NewsConten " + news.getTitle() + " "+ news.getContent() +" updated successfully");
+			model.addAttribute("success", " updated successfully");
 			return "ckeditor";
 		}
-
+	@RequestMapping(value = { "/delete-news-{Id}" }, method = RequestMethod.GET)
+	public String deleteNews(@PathVariable Integer Id) {
+		newsService.deleteNewByID(Id);
+		return "Menu_home";
+	}
 
   /*  @RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
 	public String listUsers(ModelMap model) {
@@ -241,110 +275,26 @@ public class FileUploadController {
 		model.addAttribute("users", users);
 		return "index";
 	}*/
-	/**
-	 * This method will provide the medium to add a new user.
-	 */
-	@RequestMapping(value = { "/newuser" }, method = RequestMethod.GET)
-	public String newUser(ModelMap model) {
-		User user = new User();
-		model.addAttribute("user", user);
-		model.addAttribute("edit", false);
-		return "registration";
-	}
-
-	/**
-	 * This method will be called on form submission, handling POST request for
-	 * saving user in database. It also validates the user input
-	 */
-	@RequestMapping(value = { "/newuser" }, method = RequestMethod.POST)
-	public String saveUser(@Valid User user, BindingResult result,
-			ModelMap model) {
-
-		if (result.hasErrors()) {
-			return "registration";
-		}
-
-		/*
-		 * Preferred way to achieve uniqueness of field [sso] should be implementing custom @Unique annotation 
-		 * and applying it on field [sso] of Model class [User].
-		 * 
-		 * Below mentioned peace of code [if block] is to demonstrate that you can fill custom errors outside the validation
-		 * framework as well while still using internationalized messages.
-		 * 
-		 */
-		if(!userService.isUserSSOUnique(user.getId(), user.getSsoId())){
-			FieldError ssoError =new FieldError("user","ssoId",messageSource.getMessage("non.unique.ssoId", new String[]{user.getSsoId()}, Locale.getDefault()));
-		    result.addError(ssoError);
-			return "registration";
-		}
-		
-		userService.saveUser(user);
-		
-		model.addAttribute("user", user);
-		model.addAttribute("success", "User " + user.getFirstName() + " "+ user.getLastName() + " registered successfully");
-		//return "success";
-		return "registrationsuccess";
-	}
-
-
-	/**
-	 * This method will provide the medium to update an existing user.
-	 */
-	@RequestMapping(value = { "/edit-user-{ssoId}" }, method = RequestMethod.GET)
-	public String editUser(@PathVariable String ssoId, ModelMap model) {
-		User user = userService.findBySSO(ssoId);
-		model.addAttribute("user", user);
-		model.addAttribute("edit", true);
-		return "registration";
-	}
 	
-	/**
-	 * This method will be called on form submission, handling POST request for
-	 * updating user in database. It also validates the user input
-	 */
-	@RequestMapping(value = { "/edit-user-{ssoId}" }, method = RequestMethod.POST)
-	public String updateUser(@Valid User user, BindingResult result,
-			ModelMap model, @PathVariable String ssoId) {
-
-		if (result.hasErrors()) {
-			return "registration";
-		}
-
-		userService.updateUser(user);
-
-		model.addAttribute("success", "User " + user.getFirstName() + " "+ user.getLastName() + " updated successfully");
-		return "registrationsuccess";
-	}
-
-	
-	/**
-	 * This method will delete an user by it's SSOID value.
-	 */
-	@RequestMapping(value = { "/delete-user-{ssoId}" }, method = RequestMethod.GET)
-	public String deleteUser(@PathVariable String ssoId) {
-		userService.deleteUserBySSO(ssoId);
-		return "redirect:/list";
-	}
-	
-
-	
-	@RequestMapping(value = { "/add-document-{userId}" }, method = RequestMethod.GET)
-	public String addDocuments(@PathVariable int userId, ModelMap model) {
-		User user = userService.findById(userId);
-		model.addAttribute("user", user);
-
+	@RequestMapping(value = { "/add-document-{newsId}" }, method = RequestMethod.GET)
+	public String addDocuments(@PathVariable int newsId, ModelMap model) {
+		NewsConten newslist = newsService.findById(newsId);
+		model.addAttribute("newslist", newslist);
+		List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
 		FileBucket fileModel = new FileBucket();
 		model.addAttribute("fileBucket", fileModel);
-
-		List<UserDocument> documents = userDocumentService.findAllByUserId(userId);
+			
+		List<UserDocument> documents = userDocumentService.findAllByNewsId(newsId);
 		model.addAttribute("documents", documents);
-		
+		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
 		return "managedocuments";
 	}
 	
 
-	@RequestMapping(value = { "/download-document-{userId}-{docId}" }, method = RequestMethod.GET)
-	public String downloadDocument(@PathVariable int userId, @PathVariable int docId, HttpServletResponse response) throws IOException {
+	@RequestMapping(value = { "/download-document-{newsId}-{docId}" }, method = RequestMethod.GET)
+	public String downloadDocument(@PathVariable String newsId, @PathVariable int docId, HttpServletResponse response) throws IOException {
 		UserDocument document = userDocumentService.findById(docId);
 		response.setContentType(document.getType());
         response.setContentLength(document.getContent().length);
@@ -352,24 +302,26 @@ public class FileUploadController {
  
         FileCopyUtils.copy(document.getContent(), response.getOutputStream());
  
- 		return "redirect:/add-document-"+userId;
+ 		return "redirect:/add-document-"+newsId;
 	}
 
-	@RequestMapping(value = { "/delete-document-{userId}-{docId}" }, method = RequestMethod.GET)
-	public String deleteDocument(@PathVariable int userId, @PathVariable int docId) {
+	@RequestMapping(value = { "/delete-document-{newsId}-{docId}" }, method = RequestMethod.GET)
+	public String deleteDocument(@PathVariable int newsId, @PathVariable int docId) {
 		userDocumentService.deleteById(docId);
-		return "redirect:/add-document-"+userId;
+		return "redirect:/add-document-"+newsId;
 	}
 
-	@RequestMapping(value = { "/add-document-{userId}" }, method = RequestMethod.POST)
-	public String uploadDocument(@Valid FileBucket fileBucket, BindingResult result, ModelMap model, @PathVariable int userId) throws IOException{
+	@RequestMapping(value = { "/add-document-{newsId}" }, method = RequestMethod.POST)
+	public String uploadDocument(@Valid FileBucket fileBucket, BindingResult result, ModelMap model, @PathVariable int newsId) throws IOException{
 		
 		if (result.hasErrors()) {
 			System.out.println("validation errors");
-			User user = userService.findById(userId);
-			model.addAttribute("user", user);
+			NewsConten newslist = newsService.findById(newsId);
+			model.addAttribute("newslist", newslist);
+			List<NewsConten> news = newsService.findAllNews();
+	 		model.addAttribute("news", news);
 
-			List<UserDocument> documents = userDocumentService.findAllByUserId(userId);
+			List<UserDocument> documents = userDocumentService.findAllByNewsId(newsId);
 			model.addAttribute("documents", documents);
 			
 			return "managedocuments";
@@ -377,16 +329,18 @@ public class FileUploadController {
 			
 			System.out.println("Fetching file");
 			
-			User user = userService.findById(userId);
-			model.addAttribute("user", user);
+			NewsConten newslist = newsService.findById(newsId);
+			model.addAttribute("newslist", newslist);
+			List<NewsConten> news = newsService.findAllNews();
+	 		model.addAttribute("news", news);
 
-			saveDocument(fileBucket, user);
+			saveDocument(fileBucket, newslist);
 
-			return "redirect:/add-document-"+userId;
+			return "redirect:/add-document-"+newsId;
 		}
 	}
 	
-	private void saveDocument(FileBucket fileBucket, User user) throws IOException{
+	private void saveDocument(FileBucket fileBucket, NewsConten news) throws IOException{
 		
 		UserDocument document = new UserDocument();
 		
@@ -396,7 +350,7 @@ public class FileUploadController {
 		document.setDescription(fileBucket.getDescription());
 		document.setType(multipartFile.getContentType());
 		document.setContent(multipartFile.getBytes());
-		document.setUser(user);
+		document.setNews(news);
 		userDocumentService.saveDocument(document);
 	}
  

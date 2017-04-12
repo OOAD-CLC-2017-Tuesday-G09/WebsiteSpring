@@ -7,7 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import dao.NewsDao;
-import model.NewsConten;;
+import model.NewsConten;
+import model.UserDocument;;
 
 
 @Service("newsService")
@@ -38,7 +39,7 @@ public class NewsServiceImpl implements NewsService{
 	}
 
 	@Override
-	public void deleteNewByID(String ID) {
+	public void deleteNewByID(int ID) {
 		dao.deleteById(ID);
 		
 	}

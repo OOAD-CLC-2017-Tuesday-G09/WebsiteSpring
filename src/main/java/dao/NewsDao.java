@@ -9,7 +9,7 @@ public interface NewsDao {
 	
 	void save(NewsConten news);
 
-	void deleteById(String id);
+	void deleteById(int id);
 
 	List<NewsConten> findAllNews();
 }

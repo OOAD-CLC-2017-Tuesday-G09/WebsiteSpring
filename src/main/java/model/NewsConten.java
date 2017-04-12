@@ -1,5 +1,8 @@
 package model;
 
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,7 +32,13 @@ public class NewsConten {
     @NotEmpty
     @Column(name="CONTENT", nullable=false)
     private String content;
-
+    
+    @NotEmpty
+    @Column(name="DATEPOST", nullable=false)
+    private String datepost;
+    
+    @OneToMany(mappedBy = "news", cascade = CascadeType.ALL)
+    private Set<UserDocument> userDocuments = new HashSet<UserDocument>();
      
     public Integer getId() {
         return id;
@@ -55,7 +64,20 @@ public class NewsConten {
     public void setContent(String content) {
         this.content = content;
     }
+    public String getDatepost() {
+        return datepost;
+    }
  
+    public void setDatepost(String datepost) {
+        this.datepost = datepost;
+    }
+    public Set<UserDocument> getUserDocuments() {
+        return userDocuments;
+    }
+ 
+    public void setUserDocuments(Set<UserDocument> userDocuments) {
+        this.userDocuments = userDocuments;
+    }
   
     @Override
     public int hashCode() {
