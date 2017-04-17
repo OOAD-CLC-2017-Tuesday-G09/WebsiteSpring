@@ -82,7 +82,7 @@
 				</form:form>
 				</div>
 	 	<div class="well">
-	 		Go to <a href="<c:url value='/' />">News List</a>
+	 		Go to <a href="<c:url value='/managenews' />">Manage Document</a>
 	 	</div>
    	</div>
 </jsp:body>

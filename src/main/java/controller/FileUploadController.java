@@ -97,64 +97,16 @@ public class FileUploadController {
     }   */
     
   //home
-    @GetMapping("/home")
+    @GetMapping(value={"/","/home"})
     public String showHome(Model model) throws IOException {
     	List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
  		List<UserDocument> listdocuments = userDocumentService.findAll();
 		model.addAttribute("listdocuments", listdocuments);
-        return "Menu_home";
+        return "menu_home";
     }
     
-   //Venue_Hotel
-    @GetMapping("/Venue&hotel")
-    public String showVenue(Model model) throws IOException {
-    	List<NewsConten> news = newsService.findAllNews();
- 		model.addAttribute("news", news);
- 		List<UserDocument> listdocuments = userDocumentService.findAll();
-		model.addAttribute("listdocuments", listdocuments);
-        return "Menu_Venue&hotel";
-    }
-    
-  //Call
-    @GetMapping("/call")
-    public String showCall(Model model) throws IOException {
-    	List<NewsConten> news = newsService.findAllNews();
- 		model.addAttribute("news", news);
- 		List<UserDocument> listdocuments = userDocumentService.findAll();
-		model.addAttribute("listdocuments", listdocuments);
-        return "Menu_call";
-    }
-   
-  //submission
-    @GetMapping("/submission")
-    public String showSubmission(Model model) throws IOException {
-    	List<NewsConten> news = newsService.findAllNews();
- 		model.addAttribute("news", news);
- 		List<UserDocument> listdocuments = userDocumentService.findAll();
-		model.addAttribute("listdocuments", listdocuments);
-        return "Menu_submission";
-    }
-    
-  //regis
-    @GetMapping("/registration")
-    public String showRegis(Model model) throws IOException {
-    	List<NewsConten> news = newsService.findAllNews();
- 		model.addAttribute("news", news);
- 		List<UserDocument> listdocuments = userDocumentService.findAll();
-		model.addAttribute("listdocuments", listdocuments);
-        return "Menu_registration";
-    }
-
-  //keynote
-    @GetMapping("/keynote")
-    public String showKey(Model model) throws IOException {
-    	List<NewsConten> news = newsService.findAllNews();
- 		model.addAttribute("news", news);
- 		List<UserDocument> listdocuments = userDocumentService.findAll();
-		model.addAttribute("listdocuments", listdocuments);
-        return "Menu_Keynote";
-    }
+  
     
      @GetMapping("/files/{filename:.+}")
     @ResponseBody
@@ -186,7 +138,7 @@ public class FileUploadController {
     public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
         return ResponseEntity.notFound().build();
     }
-    @RequestMapping(value = { "/", "/managenews" }, method = RequestMethod.GET)
+    @RequestMapping(value = {"/managenews" }, method = RequestMethod.GET)
  	public String listNews(ModelMap model) {
 		List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
@@ -200,6 +152,9 @@ public class FileUploadController {
 		model.addAttribute("newlist", newlist);
 		List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
+ 		model.addAttribute("news", news);
 		model.addAttribute("edit", false);
 		return "ckeditor";
 	}
@@ -208,10 +163,10 @@ public class FileUploadController {
     	Integer idnews = Integer.parseInt(Id);
 		NewsConten newlist = newsService.findById(idnews);
 		model.addAttribute("newlist", newlist);
-		
 		List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
-
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
  		List<UserDocument> documents = userDocumentService.findAllByNewsId(idnews);
 		model.addAttribute("documents", documents);
 		return "NewsIfo";
@@ -221,17 +176,18 @@ public class FileUploadController {
 			ModelMap model) {
 
 		if (result.hasErrors()) {
-			return "Menu_home";
+			return "index";
 		}
 
 		newsService.saveNews(newspost);
 		
-		model.addAttribute("news", newspost);
 		model.addAttribute("success", " comit successfully");
 		List<NewsConten> news = newsService.findAllNews();
  		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
 		//return "success";
-		return "ckeditor";
+		return "index";
 	}
 	@RequestMapping(value = { "/edit-news-{Id}" }, method = RequestMethod.GET)
 	public String editNews(@PathVariable String Id, ModelMap model) {
@@ -240,6 +196,8 @@ public class FileUploadController {
 		model.addAttribute("newlist", newlist);
 		
 		List<NewsConten> news = newsService.findAllNews();
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
  		model.addAttribute("news", news);
 		model.addAttribute("edit", true);
 		return "ckeditor";
@@ -250,22 +208,30 @@ public class FileUploadController {
 	 * updating user in database. It also validates the user input
 	 */
 	@RequestMapping(value = { "/edit-news-{Id}" }, method = RequestMethod.POST)
-	public String updateNews(@Valid NewsConten news, BindingResult result,
+	public String updateNews(@Valid NewsConten newspost, BindingResult result,
 				ModelMap model, @PathVariable String Id) {
 	
 			if (result.hasErrors()) {
-				return "Menu_home";
+				return "index";
 			}
 	
-			newsService.updateNews(news);
-	
+			newsService.updateNews(newspost);
+			List<NewsConten> news = newsService.findAllNews();
+	 		model.addAttribute("news", news);
+	 		List<UserDocument> listdocuments = userDocumentService.findAll();
+			model.addAttribute("listdocuments", listdocuments);
 			model.addAttribute("success", " updated successfully");
-			return "ckeditor";
+			return "index";
 		}
 	@RequestMapping(value = { "/delete-news-{Id}" }, method = RequestMethod.GET)
-	public String deleteNews(@PathVariable Integer Id) {
+	public String deleteNews(@PathVariable Integer Id,ModelMap model) {
 		newsService.deleteNewByID(Id);
-		return "Menu_home";
+		List<NewsConten> news = newsService.findAllNews();
+ 		model.addAttribute("news", news);
+ 		List<UserDocument> listdocuments = userDocumentService.findAll();
+		model.addAttribute("listdocuments", listdocuments);
+		model.addAttribute("success", " delete successfully");
+		return "index";
 	}
 
   /*  @RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
