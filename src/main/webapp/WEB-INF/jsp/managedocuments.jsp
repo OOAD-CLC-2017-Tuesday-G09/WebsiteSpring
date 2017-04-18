@@ -3,7 +3,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
-<script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
+<!-- <script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script> -->
+<script src="//cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
 <t:template>
 	<jsp:body>
 		  	<div class="panel-heading">
@@ -30,11 +31,11 @@
 							<td>${doc.type}</td>
 							<td>${doc.description}</td>
 							<td><a
-										href="<c:url value='/download-document-${newslist.id}-${doc.id}' />"
-										class="btn btn-success">download</a></td>
+								href="<c:url value='/download-document-${newslist.id}-${doc.id}' />"
+								class="btn btn-success">download</a></td>
 							<td><a
-										href="<c:url value='/delete-document-${newslist.id}-${doc.id}' />"
-										class="btn btn-danger">delete</a></td>
+								href="<c:url value='/delete-document-${newslist.id}-${doc.id}' />"
+								class="btn btn-danger">delete</a></td>
 						</tr>
 					</c:forEach>
 		    		</tbody>
@@ -47,14 +48,14 @@
 				</div>
 			<div class="uploadcontainer">
 				<form:form method="POST" modelAttribute="fileBucket"
-						enctype="multipart/form-data" class="form-horizontal">
+					enctype="multipart/form-data" class="form-horizontal">
 			
 					<div class="row">
 						<div class="form-group col-md-12">
 							<label class="col-md-3 control-lable" for="file">Upload a document</label>
-							<div class="col-md-7">
+							<div class="col-md-9">
 								<form:input type="file" path="file" id="file"
-										class="form-control input-sm" />
+									class="form-control input-sm" />
 								<div class="has-error">
 									<form:errors path="file" class="help-inline" />
 								</div>
@@ -64,9 +65,12 @@
 					<div class="row">
 						<div class="form-group col-md-12">
 							<label class="col-md-3 control-lable" for="file">Description</label>
-							<div class="col-md-7">
-								<form:input type="text" path="description" id="description"
-										class="form-control input-sm" />
+							<div class="col-md-9">
+							    <textarea class="ckeditor" path="description"
+									name="description" cols="30" rows="20">
+            ${newlist.content}
+       </textarea>
+
 							</div>
 							
 						</div>
@@ -75,14 +79,14 @@
 					<div class="row">
 						<div class="form-actions floatRight">
 							<input type="submit" value="Upload"
-									class="btn btn-primary btn-sm">
+								class="btn btn-primary btn-sm">
 						</div>
 					</div>
 	
 				</form:form>
 				</div>
 	 	<div class="well">
-	 		Go to <a href="<c:url value='/' />">News List</a>
+	 		Go to <a href="<c:url value='/managenews' />">Manage Document</a>
 	 	</div>
    	</div>
 </jsp:body>

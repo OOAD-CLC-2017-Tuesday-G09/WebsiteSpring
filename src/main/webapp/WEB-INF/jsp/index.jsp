@@ -18,10 +18,11 @@
 							<td >${news.title}</td>
 							<td ><a href="<c:url value='/edit-news-${news.id}' />" class="btn btn-success">edit</a></td>
 							<td ><a href="<c:url value='/delete-news-${news.id}' />" class="btn btn-danger">delete</a></td>
-							<td ><a href="<c:url value='/add-document-${news.id}' />"class="btn btn-primary">upload file</a>	</td>
+							<td ><a href="<c:url value='/add-document-${news.id}' />"class="btn btn-primary">Manage file</a>	</td>
 						</tr>						
 					</c:forEach>
 			</table>
 			<a href="<c:url value='/newscontent' />" class="btn btn-success">News Post</a>
+			<a href="<c:url value='/editsidebar' />" class="btn btn-success">Edit Sidebar</a>
 		</jsp:body>
 	</t:template>

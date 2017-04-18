@@ -126,133 +126,130 @@
 								<!-- end Link website and search -->
 								<!-- banner -->
 								<div id='banner' style="width: 1000px; float: left">
-									<div>
+									<div class="col-md-12" style="height: auto;">
+										<div class="slider-wrapper theme-default">
+											<div id="slider" class="nivoSlider">
+												<a href="#" target="_blank"> <img
+													src="/resources/Resources/imagesPortlet/banner/HNQT3.jpg"
+													title="" /></a> <a href="" target="_blank"> <img
+													src="/resources/Resources/imagesPortlet/baner/HNQT2.jpg"
+													title="" /></a> <a href="" target="_blank"> <img
+													src="/resources/Resources/imagesPortlet/baner/HNQT1.jpg"
+													title="" /></a>
 
-										<div class="container" style="height: 350px;">
-											<div class="slider-wrapper theme-default">
-												<div id="slider" class="nivoSlider">
-
-													<a href="" target="_blank"> <img
-														src="/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT3.jpg"
-														title="" /></a> <a href="" target="_blank"> <img
-														src="/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT2.jpg"
-														title="" /></a> <a href="" target="_blank"> <img
-														src="/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT1.jpg"
-														title="" /></a>
-
-												</div>
 											</div>
 										</div>
-
 									</div>
+
 								</div>
-								<!-- end banner -->
-								<!-- Menu -->
-								<div id='ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92'
-									style="padding: 10px 0px 0px 0px; width: 1000px; float: left">
-									<div>
-
-										<link href="/resources/Portlets/MenuRad/Menu.Green.css"
-											rel="stylesheet" type="text/css" />
-										<div
-											id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu"
-											class="RadMenu RadMenu_Green rmSized"
-											style="height: 40px; z-index: 1; width: 100%;">
-											<ul class="rmRootGroup rmHorizontal">
-												<li class="rmItem rmFirst"><a href="home"
-													class="rmLink rmRootLink"> <span class="rmText">Home</span>
-												</a></li>
-												<li class="rmItem " style="z-index: 0;"><a
-													href="#"
-													class="rmLink rmRootLink"> <span
-														class="rmText rmExpandDown">About</span>
-												</a>
-													<div class="rmSlide"
-														style="visibility: visible; height: 102px; width: 139px; display: none; overflow: hidden; left: 0px; top: 40px; z-index: 10;">
-														<ul class="rmVertical rmGroup rmLevel1"
-															style="display: block; top: -102px; left: 0px; visibility: visible;">
-															<li class="rmItem rmFirst"><a
-																href="/Default.aspx?ArticleId=f9111384-c9ad-46ac-ba10-037bf3d691a4"
-																class="rmLink" style="width: 139px;"> <span
-																	class="rmText">icsse</span>
-															</a></li>
-															<li class="rmItem "><a
-																href="/Default.aspx?ArticleId=c8018710-9562-44c6-bef0-2a0f22e73f6b"
-																class="rmLink" style="width: 139px;"> <span
-																	class="rmText">HCMUTE</span>
-															</a></li>
-															<li class="rmItem rmLast"><a
-																href="/Default.aspx?ArticleId=dd21088d-cb55-4f9d-ac9c-73553c715cae"
-																class="rmLink" style="width: 139px;"> <span
-																	class="rmText">Committees</span>
-															</a></li>
-
-														</ul>
-													</div></li>
-												<li class="rmItem "><a href="call"
-													class="rmLink rmRootLink"> <span class="rmText">Call
-															for papers</span>
-												</a></li>
-
-												<li class="rmItem "><a href="submission"
-													class="rmLink rmRootLink"> <span class="rmText">Submission</span>
-												</a></li>
-												<li class="rmItem "><a href="registration"
-													class="rmLink rmRootLink"> <span class="rmText">Registration</span>
-												</a></li>
-												<li class="rmItem "><a href="keynote"
-													class="rmLink rmRootLink"> <span class="rmText">Keynote
-															Speakers</span>
-												</a></li>
-												<li class="rmItem "><a
-													href="/resources/Portlets/MenuRad/#"
-													class="rmLink rmRootLink"> <span class="rmText">Program</span>
-												</a></li>
-												<li class="rmItem "><a href="Venue&hotel"
-													class="rmLink rmRootLink"> <span class="rmText">Venue
-															& Hotel</span>
-												</a></li>
-												<li class="rmItem rmLast" style="z-index: 0;"><a
-													href="#" class="rmLink rmRootLink"> <span
-														class="rmText rmExpandDown">More</span>
-												</a>
-													<div class="rmSlide"
-														style="visibility: visible; height: 102px; width: 139px; display: none; overflow: hidden; left: 0px; top: 40px; z-index: 10;">
-														<ul class="rmVertical rmGroup rmLevel2"
-															style="display: block; top: -102px; left: 0px; visibility: visible;">
-															<li class="rmItem rmFirst"><a
-																href="/Default.aspx?ArticleId=62bc2b02-e1ca-41ca-b0da-928ed1ccfb25"
-																class="rmLink" style="width: 139px;"> <span
-																	class="rmText">Login</span>
-															</a></li>
-															<li class="rmItem "><a
-																href="/Default.aspx?ArticleId=b3639c73-c24b-42ed-97e7-06a3e0cf8b23"
-																class="rmLink" style="width: 139px;"> <span
-																	class="rmText">Edit</span>
-															</a></li>
-															<li class="rmItem rmLast"><a
-																href="Default.aspx?ArticleId=b4031ebe-e802-4402-a49a-5769943872a5"
-																class="rmLink rmRootLink"> <span class="rmText">Contact</span>
-															</a></li>
-														</ul>
-													</div></li>
-
-												<li class="rmItem "><a href="managenews"
-													class="rmLink rmRootLink"> <span class="rmText">Manage
-															Ckeditor</span>
-												</a></li>
-											</ul>
-											<input
-												id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"
-												name="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"
-												type="hidden" />
-										</div>
-
-									</div>
-								</div>
-
-								<!-- end Menu -->
 							</div>
+							<!-- end banner -->
+							<!-- Menu -->
+							<div id='ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92'
+								style="padding: 10px 0px 0px 0px; width: 1000px; float: left">
+								<div>
+
+									<link href="/resources/Portlets/MenuRad/Menu.Green.css"
+										rel="stylesheet" type="text/css" />
+									<div
+										id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu"
+										class="RadMenu RadMenu_Green rmSized"
+										style="height: 40px; z-index: 1; width: 100%;">
+										<ul class="rmRootGroup rmHorizontal">
+											<li class="rmItem rmFirst"><a href="news-10"
+												class="rmLink rmRootLink"> <span class="rmText">Home</span>
+											</a></li>
+											<li class="rmItem " style="z-index: 0;"><a href="#"
+												class="rmLink rmRootLink"> <span
+													class="rmText rmExpandDown">About</span>
+											</a>
+												<div class="rmSlide"
+													style="visibility: visible; height: 102px; width: 139px; display: none; overflow: hidden; left: 0px; top: 40px; z-index: 10;">
+													<ul class="rmVertical rmGroup rmLevel1"
+														style="display: block; top: -102px; left: 0px; visibility: visible;">
+														<li class="rmItem rmFirst"><a
+															href="/Default.aspx?ArticleId=f9111384-c9ad-46ac-ba10-037bf3d691a4"
+															class="rmLink" style="width: 139px;"> <span
+																class="rmText">icsse</span>
+														</a></li>
+														<li class="rmItem "><a
+															href="/Default.aspx?ArticleId=c8018710-9562-44c6-bef0-2a0f22e73f6b"
+															class="rmLink" style="width: 139px;"> <span
+																class="rmText">HCMUTE</span>
+														</a></li>
+														<li class="rmItem rmLast"><a
+															href="/Default.aspx?ArticleId=dd21088d-cb55-4f9d-ac9c-73553c715cae"
+															class="rmLink" style="width: 139px;"> <span
+																class="rmText">Committees</span>
+														</a></li>
+
+													</ul>
+												</div></li>
+											<li class="rmItem "><a href="news-12"
+												class="rmLink rmRootLink"> <span class="rmText">Call
+														for papers</span>
+											</a></li>
+
+											<li class="rmItem "><a href="news-13"
+												class="rmLink rmRootLink"> <span class="rmText">Submission</span>
+											</a></li>
+											<li class="rmItem "><a href="news-14"
+												class="rmLink rmRootLink"> <span class="rmText">Registration</span>
+											</a></li>
+											<li class="rmItem "><a href="news-15"
+												class="rmLink rmRootLink"> <span class="rmText">Keynote
+														Speakers</span>
+											</a></li>
+											<li class="rmItem "><a
+												href="/resources/Portlets/MenuRad/#"
+												class="rmLink rmRootLink"> <span class="rmText">Program</span>
+											</a></li>
+											<li class="rmItem "><a href="news-16"
+												"
+												class="rmLink rmRootLink"> <span
+													class="rmText">Venue & Hotel</span>
+											</a></li>
+											<li class="rmItem rmLast" style="z-index: 0;"><a
+												href="#" class="rmLink rmRootLink"> <span
+													class="rmText rmExpandDown">More</span>
+											</a>
+												<div class="rmSlide"
+													style="visibility: visible; height: 102px; width: 139px; display: none; overflow: hidden; left: 0px; top: 40px; z-index: 10;">
+													<ul class="rmVertical rmGroup rmLevel2"
+														style="display: block; top: -102px; left: 0px; visibility: visible;">
+														<li class="rmItem rmFirst"><a
+															href="/Default.aspx?ArticleId=62bc2b02-e1ca-41ca-b0da-928ed1ccfb25"
+															class="rmLink" style="width: 139px;"> <span
+																class="rmText">Login</span>
+														</a></li>
+														<li class="rmItem "><a
+															href="/Default.aspx?ArticleId=b3639c73-c24b-42ed-97e7-06a3e0cf8b23"
+															class="rmLink" style="width: 139px;"> <span
+																class="rmText">Edit</span>
+														</a></li>
+														<li class="rmItem rmLast"><a
+															href="Default.aspx?ArticleId=b4031ebe-e802-4402-a49a-5769943872a5"
+															class="rmLink rmRootLink"> <span class="rmText">Contact</span>
+														</a></li>
+													</ul>
+												</div></li>
+
+											<li class="rmItem "><a href="managenews"
+												class="rmLink rmRootLink"> <span class="rmText">Manage
+														Ckeditor</span>
+											</a></li>
+										</ul>
+										<input
+											id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"
+											name="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"
+											type="hidden" />
+									</div>
+
+								</div>
+							</div>
+
+							<!-- end Menu -->
+						</div>
 						</div>
 					</td>
 				</tr>
@@ -296,7 +293,8 @@
 																<li>
 																	<h5 style="color: Red">${news.datepost}</h5> <a
 																	href="/news-${news.id}">
-																		<h5>${news.title}</h5>
+																	<h5>${news.title}</h5>	
+																</a>
 																</li>
 															</c:forEach>
 														</ul>
@@ -401,7 +399,7 @@
 												</table>
 												<span
 													style="font-size: 10.5pt; letter-spacing: 0.85pt; font-family: &amp; amp;"><strong
-													style="font-weight: bold; color: #002060; font-family: &amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 1.13333px;"><strong><br />
+													style="font-weight: bold; color: #002060; font-family: &amp; amp; amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 1.13333px;"><strong><br />
 															<a
 															href="https://easychair.org/conferences/?conf=icsse2017specialsess"
 															target="_blank">SPECIAL SESSION SUBMISSION LINK</a>&nbsp;</strong></strong><br />
@@ -431,7 +429,7 @@
 															style="margin: 0px; padding: 0px; font-size: 20px;"><strong
 																style="margin: 0px; padding: 0px;"><span
 																	style="margin: 0px; padding: 0px; font-size: 14px; background-color: #ffff00; color: #002060;"><strong
-																		style="font-family: &amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 0.85pt; text-align: -webkit-center; background-color: #ffff00;"><span
+																		style="font-family: &amp; amp; amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 0.85pt; text-align: -webkit-center; background-color: #ffff00;"><span
 																			style="color: #002060;"><strong
 																				style="letter-spacing: 1.13333px;"><strong>SPECIAL
 																						SESSION&nbsp;</strong></strong></span></strong>02<br /> FUZZY SYSTEMS &amp; ITS
@@ -467,7 +465,7 @@
 													<c:forEach items="${listdocuments}" var="listdocuments">
 														<li style="color: #002060; font-size: 16px;"><strong>
 																<a
-																href="<c:url value='/download-document-${newslist.id}-${listdocuments.id}' />">${listdocuments.name}</a>
+																href="<c:url value='/download-document-${newslist.id}-${listdocuments.id}' />">${listdocuments.description}</a>
 														</strong></li>
 													</c:forEach>
 												</ul>
@@ -491,14 +489,15 @@
 							<div id="pnBottom">
 								<div id="pnBottomDisplay"
 									style="clear: both; background: url(/resources/Resources/ImagesPortal/PhongBan/bgfooter_phong.png) repeat-x; width: 1000px; height: 110px;">
-									<div id='bottomVisit'
-										style="float: right">
+									<div id='bottomVisit' style="float: right">
 										<div>
 
 											<div class="truycap_ute">
 												<p>
 													<%!int count = 0;%>
-													<%count++; %>
+													<%
+														count++;
+													%>
 													Visit month:<span id="visit month"><%=count%></span>
 												</p>
 												<p class="line_footer"></p>
@@ -509,8 +508,7 @@
 
 										</div>
 									</div>
-									<div id='bottomIfo'
-										style="float: left;">
+									<div id='bottomIfo' style="float: left;">
 										<div>
 											<div class="addute">
 												<p>
