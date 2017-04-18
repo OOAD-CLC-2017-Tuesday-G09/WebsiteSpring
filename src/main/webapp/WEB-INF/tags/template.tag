@@ -130,11 +130,11 @@
 										<div class="slider-wrapper theme-default">
 											<div id="slider" class="nivoSlider">
 												<a href="#" target="_blank"> <img
-													src="/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT3.jpg"
+													src="/resources/Resources/imagesPortlet/banner/HNQT3.jpg"
 													title="" /></a> <a href="" target="_blank"> <img
-													src="/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT2.jpg"
+													src="/resources/Resources/imagesPortlet/baner/HNQT2.jpg"
 													title="" /></a> <a href="" target="_blank"> <img
-													src="/resources/Resources/imagesPortlet/e28a24d5-befe-4213-a3d5-2e1ebcb2a71e/HNQT1.jpg"
+													src="/resources/Resources/imagesPortlet/baner/HNQT1.jpg"
 													title="" /></a>
 
 											</div>
@@ -204,9 +204,10 @@
 												href="/resources/Portlets/MenuRad/#"
 												class="rmLink rmRootLink"> <span class="rmText">Program</span>
 											</a></li>
-											<li class="rmItem "><a href="news-16""
-												class="rmLink rmRootLink"> <span class="rmText">Venue
-														& Hotel</span>
+											<li class="rmItem "><a href="news-16"
+												"
+												class="rmLink rmRootLink"> <span
+													class="rmText">Venue & Hotel</span>
 											</a></li>
 											<li class="rmItem rmLast" style="z-index: 0;"><a
 												href="#" class="rmLink rmRootLink"> <span
@@ -292,7 +293,8 @@
 																<li>
 																	<h5 style="color: Red">${news.datepost}</h5> <a
 																	href="/news-${news.id}">
-																		<h5>${news.title}</h5>
+																	<h5>${news.title}</h5>	
+																</a>
 																</li>
 															</c:forEach>
 														</ul>
@@ -397,7 +399,7 @@
 												</table>
 												<span
 													style="font-size: 10.5pt; letter-spacing: 0.85pt; font-family: &amp; amp;"><strong
-													style="font-weight: bold; color: #002060; font-family: &amp; amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 1.13333px;"><strong><br />
+													style="font-weight: bold; color: #002060; font-family: &amp; amp; amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 1.13333px;"><strong><br />
 															<a
 															href="https://easychair.org/conferences/?conf=icsse2017specialsess"
 															target="_blank">SPECIAL SESSION SUBMISSION LINK</a>&nbsp;</strong></strong><br />
@@ -427,7 +429,7 @@
 															style="margin: 0px; padding: 0px; font-size: 20px;"><strong
 																style="margin: 0px; padding: 0px;"><span
 																	style="margin: 0px; padding: 0px; font-size: 14px; background-color: #ffff00; color: #002060;"><strong
-																		style="font-family: &amp; amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 0.85pt; text-align: -webkit-center; background-color: #ffff00;"><span
+																		style="font-family: &amp; amp; amp; amp; amp; amp; amp; quot; times new roman&amp;amp; amp; amp; amp; amp; amp; quot; , serif; font-size: 14px; letter-spacing: 0.85pt; text-align: -webkit-center; background-color: #ffff00;"><span
 																			style="color: #002060;"><strong
 																				style="letter-spacing: 1.13333px;"><strong>SPECIAL
 																						SESSION&nbsp;</strong></strong></span></strong>02<br /> FUZZY SYSTEMS &amp; ITS

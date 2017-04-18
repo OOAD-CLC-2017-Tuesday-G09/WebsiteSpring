@@ -23,5 +23,6 @@
 					</c:forEach>
 			</table>
 			<a href="<c:url value='/newscontent' />" class="btn btn-success">News Post</a>
+			<a href="<c:url value='/editsidebar' />" class="btn btn-success">Edit Sidebar</a>
 		</jsp:body>
 	</t:template>
